@@ -2,7 +2,7 @@
   max-width: 650px;
 }
 .header .header-content .header-title .down{
-  font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
 }
 
 /* Small devices (landscape phones, less than 768px) */
