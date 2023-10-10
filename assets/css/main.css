@@ -19,3 +19,10 @@
   }
 }
 
+.portfolio-card-img {
+  min-height: 350px;
+}
+
+.list-inline-item i {
+  font-size: 32px;
+}
