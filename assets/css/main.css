@@ -1,38 +1,112 @@
-.header .header-content{
-  max-width: 650px;
-}
-.header .header-content .header-title .down{
-  font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
-}
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-  .header .header-content .header-title .down{
-    font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1300 - 300)))
-  }
+/* Modern styling updates */
+:root {
+  --primary-color: #695aa6;
+  --secondary-color: #6c757d;
+  --dark-color: #343a40;
+  --light-color: #f8f9fa;
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  .about-p {
-    width: 80%;
-  }
+/* Header styles */
+.header {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-content {
+  padding-top: 100px;
+}
+
+.header-title .up {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.header-title .down {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, var(--primary-color), #2a00d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-subtitle {
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  letter-spacing: 2px !important;
+  margin-bottom: 2rem !important;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.header-buttons .btn-outline-light {
+  border: 1px solid #343a40;
+  color: #343a40;
+}
+
+/* Portfolio card updates */
+.portfolio-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
 }
 
 .portfolio-card-img {
-  min-height: 350px;
+  height: 250px;
+  object-fit: cover;
 }
 
-.list-inline-item i {
-  font-size: 32px;
+/* Service card updates */
+.service-card {
+  padding: 2rem;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+/* Blog/Experience card updates */
+.blog-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
 }
 
 .blog-card-header {
-  width: 100%;
-  height: 100%;
-  margin: auto;
+  height: 200px;
 }
+
 .blog-card-img {
-  width: 100%;
+  object-fit: cover;
   height: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-title .down {
+    font-size: 2.5rem;
+  }
+  
+  .header-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header-buttons .btn {
+    width: 100%;
+    max-width: 250px;
+  }
 }
