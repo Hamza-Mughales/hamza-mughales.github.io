@@ -110,3 +110,13 @@
     max-width: 250px;
   }
 }
+
+/* Increase icon size in the contact section */
+.list-inline-item i {
+    font-size: 32px; /* Adjust the size as needed */
+    transition: transform 0.3s ease; /* Add a transition for hover effect */
+}
+
+.list-inline-item i:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
