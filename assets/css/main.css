@@ -6,6 +6,9 @@
   --light-color: #f8f9fa;
 }
 
+body {
+  overflow-x: hidden !important;
+}
 /* Header styles */
 .header {
   min-height: 100vh;
