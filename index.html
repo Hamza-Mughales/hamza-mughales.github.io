@@ -4,22 +4,65 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Start your development with Meyawo landing page." />
-    <meta name="author" content="Devcrud" />
-    <title>Hamza Mughales Portfolio</title>
+    <meta name="description" content="Hamza Mughales - Experienced Software Engineer & Full-Stack Developer with 5+ years expertise in Laravel, Vue.js, and modern web technologies. Specializing in scalable solutions for fintech, education, and enterprise systems." />
+    <meta name="author" content="Hamza Mughales" />
+    <meta name="keywords" content="Hamza Mughales, Software Engineer, Full-Stack Developer, Laravel Developer, Vue.js Developer, Web Development, PHP Developer, Yemen Developer" />
+    <meta name="theme-color" content="#695aa6" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hamza-mughales.github.io/" />
+    <meta property="og:title" content="Hamza Mughales - Software Engineer & Full-Stack Developer" />
+    <meta property="og:description" content="Experienced Software Engineer with 5+ years expertise in Laravel, Vue.js, and modern web technologies." />
+    <meta property="og:image" content="https://hamza-mughales.github.io/assets/imgs/mee.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://hamza-mughales.github.io/" />
+    <meta property="twitter:title" content="Hamza Mughales - Software Engineer & Full-Stack Developer" />
+    <meta property="twitter:description" content="Experienced Software Engineer with 5+ years expertise in Laravel, Vue.js, and modern web technologies." />
+    <meta property="twitter:image" content="https://hamza-mughales.github.io/assets/imgs/mee.png" />
+    
+    <title>Hamza Mughales - Software Engineer | Full-Stack Developer Portfolio</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css" />
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="icon" type="image/x-icon" href="assets/imgs/mee.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://hamza-mughales.github.io/" />
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hamza Mughales",
+      "jobTitle": "Software Engineer & Full-Stack Developer",
+      "description": "Experienced Software Engineer with over 5 years of expertise in designing, developing, and deploying applications using Laravel, Vue.js, and other modern technologies.",
+      "url": "https://hamza-mughales.github.io/",
+      "email": "hamzawemughales@gmail.com",
+      "telephone": "+967771796968",
+      "sameAs": [
+        "https://www.linkedin.com/in/hamza-saeed-8a44b7319/",
+        "https://github.com/Hamza-Mughales"
+      ],
+      "knowsAbout": ["Laravel", "Vue.js", "PHP", "JavaScript", "MySQL", "Full-Stack Development", "Web Development", "API Development"],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Sana'a University"
+      }
+    }
+    </script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="fade-in">
     <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20" role="navigation" aria-label="Main Navigation">
         <div class="container">
-            <a class="logo" href="#"></a>
+            <a class="logo" href="#home" aria-label="Home"></a>
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -43,7 +86,7 @@
           <a href="components.html" class="btn btn-primary">Components</a>
         </li> -->
             </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic" aria-label="Toggle navigation menu" aria-expanded="false">
                 <div class="hamburger-box">
                     <div class="hamburger-inner"></div>
                 </div>
@@ -53,7 +96,7 @@
     <!-- End of Page Navbar -->
 
     <!-- page header -->
-    <header id="home" class="header">
+    <header id="home" class="header" role="banner">
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
@@ -61,6 +104,7 @@
                 <span class="down">Hamza Mughales</span>
             </h1>
             <p class="header-subtitle">Software Engineer | FULL-STACK DEVELOPER</p>
+            <p class="header-tagline text-light mt-3">Transforming ideas into scalable, high-performance web solutions</p>
             <div class="header-buttons">
                 <a href="#portfolio" class="btn btn-primary me-3">View My Work</a>
                 <a href="#contact" class="btn btn-outline-light">Contact Me</a>
@@ -70,24 +114,28 @@
     <!-- end of page header -->
 
     <!-- about section -->
-    <section class="section pt-0" id="about">
+    <section class="section pt-0" id="about" aria-labelledby="about-title">
         <!-- container -->
         <div class="container text-center">
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/mee.png" class="about-img" alt="" />
+                    <img src="assets/imgs/mee.png" class="about-img" alt="Hamza Mughales - Software Engineer" loading="lazy" />
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
+                    <h2 class="section-title mb-3" id="about-title">About Me</h2>
                     <p class="about-p">
-                        Experienced Software Engineer with over 5 years of expertise in designing, developing,
-                        and deploying applications using Laravel, Vue.js, and other technologies. Skilled in
-                        creating scalable, efficient solutions tailored to business needs. Successfully contributed
-                        to projects in diverse fields, including fintech, education, and accounting, delivering
-                        high-quality software solutions that drive results. Passionate about solving complex problems
-                        and thriving in collaborative environments as a Full-Stack Developer.
+                        Experienced Software Engineer with over <strong>5 years of expertise</strong> in designing, developing,
+                        and deploying robust applications using <strong>Laravel, Vue.js, and modern web technologies</strong>. 
+                        Skilled in creating scalable, efficient solutions tailored to business needs with a focus on 
+                        <strong>performance, security, and user experience</strong>.
+                    </p>
+                    <p class="about-p mt-3">
+                        Successfully contributed to projects in diverse fields, including <strong>fintech, education, 
+                        e-commerce, and enterprise resource planning (ERP)</strong>, delivering high-quality software 
+                        solutions that drive tangible business results. Passionate about solving complex problems, 
+                        adopting best practices, and thriving in collaborative environments as a Full-Stack Developer.
                     </p>
                     <button id="download-cv" class="btn btn-outline-primary btn-rounded mt-4 px-5 py-2">
                         Download CV
@@ -100,17 +148,67 @@
     </section>
     <!-- end of about section -->
 
+    <!-- Skills Section -->
+    <section class="section bg-light" id="skills">
+        <div class="container text-center">
+            <p class="section-subtitle">My Expertise</p>
+            <h6 class="section-title mb-6">Technical Skills</h6>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="skill-category">
+                        <h5 class="mb-3"><i class="ti-server text-primary"></i> Backend Development</h5>
+                        <div class="skill-tags">
+                            <span class="badge badge-primary">PHP</span>
+                            <span class="badge badge-primary">Laravel</span>
+                            <span class="badge badge-primary">CodeIgniter</span>
+                            <span class="badge badge-primary">RESTful APIs</span>
+                            <span class="badge badge-primary">Microservices</span>
+                            <span class="badge badge-primary">gRPC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="skill-category">
+                        <h5 class="mb-3"><i class="ti-layout text-primary"></i> Frontend Development</h5>
+                        <div class="skill-tags">
+                            <span class="badge badge-primary">Vue.js</span>
+                            <span class="badge badge-primary">JavaScript</span>
+                            <span class="badge badge-primary">jQuery</span>
+                            <span class="badge badge-primary">HTML5/CSS3</span>
+                            <span class="badge badge-primary">Bootstrap</span>
+                            <span class="badge badge-primary">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="skill-category">
+                        <h5 class="mb-3"><i class="ti-database text-primary"></i> Database & Tools</h5>
+                        <div class="skill-tags">
+                            <span class="badge badge-primary">MySQL</span>
+                            <span class="badge badge-primary">Git/GitHub</span>
+                            <span class="badge badge-primary">Laravel Filament</span>
+                            <span class="badge badge-primary">Forge</span>
+                            <span class="badge badge-primary">API Integration</span>
+                            <span class="badge badge-primary">Payment Gateways</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Skills Section -->
+
     <!-- service section -->
-    <section class="section" id="service">
+    <section class="section" id="service" aria-labelledby="service-title">
         <div class="container text-center">
             <p class="section-subtitle">What I Do ?</p>
-            <h6 class="section-title mb-6">Service</h6>
+            <h6 class="section-title mb-6" id="service-title">Services</h6>
             <!-- row -->
             <div class="row">
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/agile-mehodlogy.svg" alt="img" class="icon">
+                            <img src="assets/imgs/agile-mehodlogy.svg" alt="Agile Development Methodology" class="icon" loading="lazy">
                             <h6 class="title">Agile Development</h6>
                         </div>
                     </div>
@@ -118,7 +216,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/tailored.svg" alt="img" class="icon">
+                            <img src="assets/imgs/tailored.svg" alt="Tailored Development Solutions" class="icon" loading="lazy">
                             <h6 class="title">Tailored Development</h6>
                         </div>
                     </div>
@@ -126,7 +224,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/solutions.svg" alt="img" class="icon">
+                            <img src="assets/imgs/solutions.svg" alt="Customized Software Solutions" class="icon" loading="lazy">
                             <h6 class="title">Customized Solutions</h6>
                         </div>
                     </div>
@@ -134,7 +232,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/testing-data-icon.png" alt="img" class="icon">
+                            <img src="assets/imgs/testing-data-icon.png" alt="Support and Maintenance Services" class="icon" loading="lazy">
                             <h6 class="title">Support & Maintenance</h6>
                         </div>
                     </div>
@@ -146,16 +244,16 @@
 
 
     <!-- portfolio section -->
-    <section class="section" id="portfolio">
+    <section class="section" id="portfolio" aria-labelledby="portfolio-title">
         <div class="text-center">
             <p class="section-subtitle">What I Did ?</p>
-            <h6 class="section-title mb-6">Portfolio</h6>
+            <h6 class="section-title mb-6" id="portfolio-title">Portfolio</h6>
             <!-- row -->
             <div class="row mb-3">
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets\imgs\portfolio\Wings\school-system.png"
-                            class="img-responsive rounded" alt="img">
+                    <a href="#" class="portfolio-card" aria-label="School Management System Project">
+                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Wings/school-system.png"
+                            class="img-responsive rounded" alt="School Management System Dashboard" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 class="mt-5">School management system</h4>
@@ -166,9 +264,9 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets\imgs\portfolio\Wings\LMS1.png"
-                            class="img-responsive rounded" alt="img">
+                    <a href="#" class="portfolio-card" aria-label="Learning Management System Project">
+                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Wings/LMS1.png"
+                            class="img-responsive rounded" alt="Learning Management System Interface" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 class="mt-5">Learning management system</h4>
@@ -179,12 +277,12 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets\imgs\portfolio\Wings\LMS.png"
-                            class="img-responsive rounded" alt="img">
+                    <a href="#" class="portfolio-card" aria-label="Educational Platform Project">
+                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Wings/LMS.png"
+                            class="img-responsive rounded" alt="Educational Platform Dashboard" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4 class="mt-5">School management system</h4>
+                                <h4 class="mt-5">Learning Management System</h4>
                                 <p class="font-weight-normal px-4">An online platform for managing and delivering
                                     educational content and courses.</p>
                             </span>
@@ -194,9 +292,9 @@
             </div>
             <div class="row mb-3">
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets\imgs\portfolio\Amat\Amat Rozy.jpeg"
-                            class="img-responsive rounded" alt="img">
+                    <a href="#" class="portfolio-card" aria-label="Amat Rozy Portfolio Project">
+                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Amat/Amat Rozy.jpeg"
+                            class="img-responsive rounded" alt="Amat Rozy Artist Portfolio" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 class="mt-5">Amat-Rozy</h4>
@@ -208,8 +306,8 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/portfolio/YT/Home.png" class="portfolio-card-img">
+                    <a href="#" class="portfolio-card" aria-label="Statistical System Project">
+                        <img src="assets/imgs/portfolio/YT/Home.png" class="portfolio-card-img" alt="Yemen Telecom Statistical System" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 class="mt-5">Statistical System</h4>
@@ -220,9 +318,9 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets\imgs\portfolio\SmartLife\ERP System.png"
-                            class="img-responsive rounded" alt="img">
+                    <a href="#" class="portfolio-card" aria-label="ERP Software Project">
+                        <img class="portfolio-card-img" src="assets/imgs/portfolio/SmartLife/ERP System.png"
+                            class="img-responsive rounded" alt="Enterprise Resource Planning System" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>ERP Software</h4>
@@ -236,8 +334,8 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/portfolio/SmartLife/Documentary.png" class="portfolio-card-img">
+                    <a href="#" class="portfolio-card" aria-label="Documentary System Project">
+                        <img src="assets/imgs/portfolio/SmartLife/Documentary.png" class="portfolio-card-img" alt="Documentary Management System" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Documentary System</h4>
@@ -248,9 +346,9 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
+                    <a href="#" class="portfolio-card" aria-label="E-commerce Platform Project">
                         <img class="portfolio-card-img" src="assets/imgs/portfolio/E-commerce/dashboard.png"
-                            class="img-responsive rounded" alt="img">
+                            class="img-responsive rounded" alt="E-commerce Platform Dashboard" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>E-commerce</h4>
@@ -261,9 +359,9 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets\imgs\portfolio/Subsystem/jobs.png"
-                            class="img-responsive rounded" alt="img">
+                    <a href="#" class="portfolio-card" aria-label="ID Card Management Project">
+                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Subsystem/jobs.png"
+                            class="img-responsive rounded" alt="Employee ID Card Management System" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>ID Cards</h4>
@@ -297,19 +395,51 @@
     <!-- end of section -->
 
     <!-- blog section -->
-    <section class="section" id="blog">
+    <section class="section" id="blog" aria-labelledby="experience-title">
         <!-- container -->
         <div class="container text-center">
-            <p class="section-subtitle">Worked For?</p>
-            <h6 class="section-title mb-6">Experience</h6>
+            <p class="section-subtitle">Where Have I Worked?</p>
+            <h6 class="section-title mb-6" id="experience-title">Professional Experience</h6>
             <!-- blog-wrapper -->
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/experience/Freelance.webp" class="blog-card-img" alt="img">
+                    <img src="assets/imgs/experience/noot.png" class="blog-card-img logo-contain" alt="NOOT Company Logo" loading="lazy">
                 </div>
                 <div class="blog-card-body">
-                    <h4 class="blog-card-title">Software Engineer </h4>
-                    <h6 class="blog-card-caption">Freelance: Aug 2019 - Present </h6>
+                    <h4 class="blog-card-title">Software Engineer</h4>
+                    <h6 class="blog-card-caption"><strong>NOOT | نوت</strong> • Full-time • Jan 2025 - Present</h6>
+                    <p class="text-muted mb-3"><i class="ti-location-pin"></i> Remote</p>
+
+                    <p>
+                        Currently working as a Software Engineer at NOOT, a modern technology company, 
+                        delivering high-quality software solutions in a remote, fast-paced environment.
+                    </p>
+
+                    <p>
+                        Building and maintaining scalable web applications using <strong>Laravel</strong> and 
+                        <strong>Filament</strong> to create efficient admin panels and management systems.
+                    </p>
+
+                    <p>
+                        Developing robust backend APIs, implementing business logic, and ensuring code quality 
+                        through best practices and modern development workflows.
+                    </p>
+
+                    <p>
+                        Collaborating with cross-functional teams to deliver features that meet business requirements 
+                        and enhance user experience while maintaining high performance standards.
+                    </p>
+                </div>
+            </div>
+            <!-- end of blog wrapper -->
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/experience/Freelance.webp" class="blog-card-img" alt="Freelance Software Engineer" loading="lazy">
+                </div>
+                <div class="blog-card-body">
+                    <h4 class="blog-card-title">Software Engineer</h4>
+                    <h6 class="blog-card-caption"><strong>Freelance</strong> • Aug 2019 - Present</h6>
 
                     <p>
                         Delivered custom web solutions for clients across various industries, focusing on developing
@@ -344,14 +474,14 @@
             <!-- blog-wrapper -->
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/experience/wings.png" class="blog-card-img" alt="img">
+                    <img src="assets/imgs/experience/wings.png" class="blog-card-img" alt="Wings Company Logo" loading="lazy">
                 </div>
                 <div class="blog-card-body">
-                    <h4 class="blog-card-title">Software Engineer </h4>
-                    <h6 class="blog-card-caption">Wings Company: Dec 2023 - Aug 2024</h6>
+                    <h4 class="blog-card-title">Software Engineer</h4>
+                    <h6 class="blog-card-caption"><strong>Wings Company</strong> • Dec 2023 - Aug 2024</h6>
 
                     <p>
-                        mproved and maintained an existing <strong>school management system (SMS)</strong> built with
+                        Improved and maintained an existing <strong>School Management System (SMS)</strong> built with
                         Laravel
                         and Vue.js, optimizing code quality, fixing runtime issues, enhancing database queries,
                         and restructuring tables for better performance as the dataset scaled. Developed and refined
@@ -377,14 +507,14 @@
             <!-- blog-wrapper -->
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/experience/kitsys.jpg" class="blog-card-img" alt="img">
+                    <img src="assets/imgs/experience/kitsys.jpg" class="blog-card-img" alt="KitSys Company Logo" loading="lazy">
                 </div>
                 <div class="blog-card-body">
-                    <h4 class="blog-card-title">Software Engineer </h4>
-                    <h6 class="blog-card-caption">KitSys Company: Jun 2023 - Nov 2023</h6>
+                    <h4 class="blog-card-title">Software Engineer</h4>
+                    <h6 class="blog-card-caption"><strong>KitSys Company</strong> • Jun 2023 - Nov 2023</h6>
 
                     <p>
-                        Developed and maintained APIs for a <strong>management system (SMS)</strong> using Laravel,
+                        Developed and maintained APIs for a <strong>School Management System (SMS)</strong> using Laravel,
                         handling core functionalities such as managing students, teachers, and subjects.
                         Implemented a microservices architecture where services communicated seamlessly via gRPC.
                     </p>
@@ -408,11 +538,11 @@
             <!-- blog-wrapper -->
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/experience/smartlife.jpg" class="blog-card-img" alt="img">
+                    <img src="assets/imgs/experience/smartlife.jpg" class="blog-card-img" alt="Smart Life Company Logo" loading="lazy">
                 </div>
                 <div class="blog-card-body">
-                    <h4 class="blog-card-title">Full-stack Developer</h4>
-                    <h6 class="blog-card-title">Smart Life Company: July 2022 - May 2023</h6>
+                    <h4 class="blog-card-title">Full-Stack Developer</h4>
+                    <h6 class="blog-card-caption"><strong>Smart Life Company</strong> • Jul 2022 - May 2023</h6>
 
                     <p>
                         Enhanced and maintained an existing ERP system built with the PHP CodeIgniter framework,
@@ -429,7 +559,7 @@
                     <p>
                         Designed and implemented a <strong>documentary system</strong> using Laravel, centralizing and
                         organizing
-                        company system documents for streamlined access and management."
+                        company system documents for streamlined access and management.
                     </p>
 
                     <p>
@@ -449,11 +579,11 @@
             <!-- blog-wrapper -->
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/experience/ysys.png" class="blog-card-img" alt="img">
+                    <img src="assets/imgs/experience/ysys.png" class="blog-card-img" alt="Ysys Company Logo" loading="lazy">
                 </div>
                 <div class="blog-card-body">
-                    <h4 class="blog-card-title">Full-stack Developer </h4>
-                    <h6 class="blog-card-title">Ysys Company: June 2021 - May 2022</h6>
+                    <h4 class="blog-card-title">Full-Stack Developer</h4>
+                    <h6 class="blog-card-caption"><strong>Ysys Company</strong> • Jun 2021 - May 2022</h6>
                     <p>
                         Designed and developed scalable web applications, with a focus on both server-side logic and
                         client-side components.
@@ -492,10 +622,10 @@
     <!-- end of blog section -->
 
     <!-- education section -->
-    <section class="section pb-0" id="testmonial">
+    <section class="section pb-0" id="testmonial" aria-labelledby="education-title">
         <div class="container text-center">
-            <p class="section-subtitle">What did I study ?</p>
-            <h6 class="section-title mb-3">Education</h6>
+            <p class="section-subtitle">Academic Background</p>
+            <h6 class="section-title mb-3" id="education-title">Education</h6>
         </div>
     </section>
 
@@ -504,12 +634,12 @@
         <div class="container text-center text-sm-left">
             <div class="row align-items-center">
                 <div class="col-sm text-center">
-                    <p class="text-light mr-4">2015 - 2019</p>
-                    <h6 class="title text-light mr-2">BACHELOR OF SCIENCE</h6>
-                    <span class="m-0 text-light h6">(INFORMATION TECHNOLOGY)</span>
+                    <p class="text-light mr-4"><i class="ti-calendar"></i> 2015 - 2019</p>
+                    <h6 class="title text-light mr-2">Bachelor of Science</h6>
+                    <span class="m-0 text-light h6">Information Technology</span>
                 </div>
             </div>
-            <p class="text-light text-center">Sana'a University</p>
+            <p class="text-light text-center"><i class="ti-location-pin"></i> Sana'a University, Yemen</p>
         </div>
     </section>
     <!-- end of section -->
@@ -517,25 +647,26 @@
     <!-- end of testimonial section -->
 
     <!-- contact section -->
-    <section class="section" id="contact">
+    <section class="section" id="contact" aria-labelledby="contact-title">
         <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="mb-md-3 section-title">Contact Me</h6>
+            <p class="section-subtitle">Let's Connect</p>
+            <h6 class="mb-md-3 section-title" id="contact-title">Get In Touch</h6>
             <div class="row">
                 <div class="col-md-6 font-italic pb-3 text-md-left">
-                    <div>Email: hamzawemughales@gmail.com</div>
-                    <div>Phone: +967771796968</div>
+                    <div><i class="ti-email"></i> <strong>Email:</strong> <a href="mailto:hamzawemughales@gmail.com" class="text-dark">hamzawemughales@gmail.com</a></div>
+                    <div><i class="ti-mobile"></i> <strong>Phone:</strong> <a href="tel:+967771796968" class="text-dark">+967 77 179 6968</a></div>
+                    <div><i class="ti-location-pin"></i> <strong>Location:</strong> Yemen</div>
                 </div>
                 <div class="col-md-6">
                     <div class="list-inline">
                         <div class="list-inline-item">
-                            <a href="https://www.linkedin.com/in/hamza-saeed-8a44b7319/" target="_blank">
-                                <i class="ti-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/hamza-saeed-8a44b7319/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                                <i class="ti-linkedin" aria-hidden="true"></i>
                             </a>
                         </div>
                         <div class="list-inline-item">
-                            <a href="https://github.com/Hamza-Mughales" target="_blank">
-                                <i class="ti-github"></i>
+                            <a href="https://github.com/Hamza-Mughales" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                                <i class="ti-github" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -547,7 +678,7 @@
 
     <!-- footer -->
     <div class="container">
-        <footer class="footer">
+        <footer class="footer" role="contentinfo">
             <p class="mb-0 text-center">
                 <script>
                     document.write(new Date().getFullYear())
