@@ -1,13 +1,16 @@
 /* RTL (Right-to-Left) Support for Arabic */
 
-/* Import Arabic font */
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+/* Import Premium Arabic Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Almarai:wght@300;400;700;800&family=Cairo:wght@300;400;600;700;900&display=swap');
 
 /* RTL Body Styles */
 body.rtl {
-    font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Tajawal', 'Almarai', 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     direction: rtl;
     text-align: right;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 /* RTL Navigation */
@@ -27,11 +30,97 @@ body.rtl #lang-toggle {
 
 /* RTL Header */
 body.rtl .header-content {
-    text-align: right;
+    text-align: center;
+    padding: 120px 20px 80px;
+}
+
+/* Enhanced Arabic Header Typography */
+body.rtl .header-title .up {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.rtl .header-title .down {
+    font-size: 4.5rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    text-shadow: 0 4px 12px rgba(105, 90, 166, 0.3);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+}
+
+body.rtl .header-subtitle {
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px !important;
+    line-height: 1.8 !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 body.rtl .header-buttons {
-    justify-content: flex-end;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+/* Mobile Header Adjustments for Arabic */
+@media (max-width: 768px) {
+    body.rtl .header-content {
+        padding: 100px 20px 80px;
+    }
+    
+    body.rtl .header-content::before {
+        width: 92%;
+        min-height: 500px;
+        border-radius: 25px;
+    }
+    
+    body.rtl .header-title .up {
+        font-size: 1.4rem;
+    }
+    
+    body.rtl .header-title .down {
+        font-size: 2.8rem;
+        letter-spacing: -0.5px;
+    }
+    
+    body.rtl .header-subtitle {
+        font-size: 1.1rem !important;
+        letter-spacing: 2px !important;
+    }
+}
+
+/* Extra small devices for Arabic */
+@media (max-width: 480px) {
+    body.rtl .header-content {
+        padding: 80px 15px 60px;
+    }
+    
+    body.rtl .header-content::before {
+        width: 95%;
+        min-height: 480px;
+        border-radius: 20px;
+    }
+    
+    body.rtl .header-title .up {
+        font-size: 1.2rem;
+    }
+    
+    body.rtl .header-title .down {
+        font-size: 2.2rem;
+    }
+    
+    body.rtl .header-subtitle {
+        font-size: 0.95rem !important;
+        letter-spacing: 1.5px !important;
+    }
 }
 
 /* RTL About Section */
@@ -139,6 +228,36 @@ body.rtl .hamburger {
 body.rtl .section-title,
 body.rtl .section-subtitle {
     text-align: center;
+}
+
+body.rtl .section-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+}
+
+body.rtl .section-subtitle {
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+/* Enhanced Typography for Arabic Content */
+body.rtl h1, body.rtl h2, body.rtl h3, 
+body.rtl h4, body.rtl h5, body.rtl h6 {
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+body.rtl p {
+    line-height: 1.9;
+    font-size: 1.05rem;
+}
+
+body.rtl strong {
+    font-weight: 800;
 }
 
 /* RTL Footer */
