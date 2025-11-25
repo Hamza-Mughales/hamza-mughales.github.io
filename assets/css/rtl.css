@@ -1,0 +1,250 @@
+/* RTL (Right-to-Left) Support for Arabic */
+
+/* Import Arabic font */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+
+/* RTL Body Styles */
+body.rtl {
+    font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+/* RTL Navigation */
+body.rtl .custom-navbar .nav {
+    flex-direction: row-reverse;
+}
+
+body.rtl .custom-navbar .logo {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+body.rtl #lang-toggle {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+/* RTL Header */
+body.rtl .header-content {
+    text-align: right;
+}
+
+body.rtl .header-buttons {
+    justify-content: flex-end;
+}
+
+/* RTL About Section */
+body.rtl .about {
+    direction: rtl;
+}
+
+body.rtl .about-caption {
+    text-align: right;
+}
+
+body.rtl .about-p {
+    text-align: right;
+}
+
+/* RTL Skills Section */
+body.rtl .skill-category {
+    text-align: right;
+}
+
+body.rtl .skill-category h5 i {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+body.rtl .skill-tags {
+    justify-content: flex-start;
+}
+
+/* RTL Service Cards */
+body.rtl .service-card {
+    text-align: right;
+}
+
+/* RTL Portfolio */
+body.rtl .portfolio-card-caption {
+    text-align: right;
+}
+
+/* RTL Blog/Experience Cards */
+body.rtl .blog-card-body {
+    text-align: right;
+}
+
+body.rtl .blog-card-caption {
+    text-align: right;
+}
+
+body.rtl .text-md-left {
+    text-align: right !important;
+}
+
+/* RTL Contact Section */
+body.rtl .font-italic {
+    text-align: right !important;
+}
+
+body.rtl .contact i {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+/* RTL List Items */
+body.rtl .list-inline {
+    padding-right: 0;
+}
+
+body.rtl .list-inline-item {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+/* RTL Icons */
+body.rtl i.ti-location-pin,
+body.rtl i.ti-email,
+body.rtl i.ti-mobile,
+body.rtl i.ti-calendar {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+/* RTL Buttons */
+body.rtl .btn {
+    text-align: center;
+}
+
+/* RTL Responsive Adjustments */
+@media (max-width: 768px) {
+    body.rtl .header-buttons {
+        justify-content: center;
+    }
+    
+    body.rtl .text-center {
+        text-align: center !important;
+    }
+}
+
+/* RTL Hamburger Menu */
+body.rtl .hamburger {
+    right: auto;
+    left: 15px;
+}
+
+/* RTL Section Titles */
+body.rtl .section-title,
+body.rtl .section-subtitle {
+    text-align: center;
+}
+
+/* RTL Footer */
+body.rtl footer {
+    text-align: center;
+}
+
+/* RTL Offset Classes */
+body.rtl .offset-md-1 {
+    margin-right: 8.333333%;
+    margin-left: 0;
+}
+
+body.rtl .offset-sm-2 {
+    margin-right: 16.666667%;
+    margin-left: 0;
+}
+
+body.rtl .offset-md-3 {
+    margin-right: 25%;
+    margin-left: 0;
+}
+
+/* RTL Text Alignment */
+body.rtl .text-sm-left {
+    text-align: right !important;
+}
+
+@media (min-width: 576px) {
+    body.rtl .text-sm-left {
+        text-align: right !important;
+    }
+}
+
+/* RTL Strong Tags */
+body.rtl strong {
+    font-weight: 700;
+}
+
+/* RTL Margin Utilities */
+body.rtl .me-3 {
+    margin-left: 1rem !important;
+    margin-right: 0 !important;
+}
+
+body.rtl .mr-2 {
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+}
+
+body.rtl .mr-4 {
+    margin-left: 1.5rem !important;
+    margin-right: 0 !important;
+}
+
+body.rtl .ml-md-3 {
+    margin-right: 1rem !important;
+    margin-left: 0 !important;
+}
+
+/* Smooth transition for language switch */
+body {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Language Toggle Button Styles */
+#lang-toggle {
+    background: linear-gradient(135deg, var(--primary-color), #8b7ab8);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(105, 90, 166, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    white-space: nowrap;
+}
+
+#lang-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(105, 90, 166, 0.4);
+    background: linear-gradient(135deg, #8b7ab8, var(--primary-color));
+}
+
+#lang-toggle:active {
+    transform: translateY(0);
+}
+
+#lang-toggle i {
+    font-size: 1.1rem;
+}
+
+/* Mobile Language Toggle */
+@media (max-width: 768px) {
+    #lang-toggle {
+        padding: 0.4rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* RTL Language Toggle */
+body.rtl #lang-toggle {
+    flex-direction: row-reverse;
+}

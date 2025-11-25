@@ -33,6 +33,7 @@
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/rtl.css" />
     <link rel="icon" type="image/x-icon" href="assets/imgs/mee.png">
 
     <!-- Canonical URL -->
@@ -69,26 +70,23 @@
             <a class="logo" href="#home" aria-label="Home"></a>
             <ul class="nav">
                 <li class="item">
-                    <a class="link" href="#home">Home</a>
+                    <a class="link" href="#home" data-i18n="nav.home">Home</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#about">About</a>
+                    <a class="link" href="#about" data-i18n="nav.about">About</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#portfolio">Portfolio</a>
+                    <a class="link" href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#testmonial">Education</a>
+                    <a class="link" href="#testmonial" data-i18n="nav.education">Education</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#blog">Experience</a>
+                    <a class="link" href="#blog" data-i18n="nav.experience">Experience</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#contact">Contact</a>
+                    <a class="link" href="#contact" data-i18n="nav.contact">Contact</a>
                 </li>
-                <!-- <li class="item ml-md-3">
-          <a href="components.html" class="btn btn-primary">Components</a>
-        </li> -->
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic"
                 aria-label="Toggle navigation menu" aria-expanded="false">
@@ -96,6 +94,7 @@
                     <div class="hamburger-inner"></div>
                 </div>
             </a>
+            <button id="lang-toggle" class="btn ml-md-3"><i class="ti-world"></i> العربية</button>
         </div>
     </nav>
     <!-- End of Page Navbar -->
@@ -105,15 +104,13 @@
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
-                <span class="up">Hello, I'm</span>
-                <span class="down">Hamza Mughales</span>
+                <span class="up" data-i18n="header.greeting">Hello, I'm</span>
+                <span class="down" data-i18n="header.name">Hamza Mughales</span>
             </h1>
-            <p class="header-subtitle">Software Engineer | FULL-STACK DEVELOPER</p>
-            <p class="header-tagline text-light mt-3">Transforming ideas into scalable, high-performance web solutions
-            </p>
+            <p class="header-subtitle" data-i18n="header.title">Software Engineer | FULL-STACK DEVELOPER</p>
             <div class="header-buttons">
-                <a href="#portfolio" class="btn btn-primary me-3">View My Work</a>
-                <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+                <a href="#portfolio" class="btn btn-primary me-3" data-i18n="header.viewWork">View My Work</a>
+                <a href="#contact" class="btn btn-outline-light" data-i18n="header.contactMe">Contact Me</a>
             </div>
         </div>
     </header>
@@ -130,9 +127,9 @@
                         loading="lazy" />
                 </div>
                 <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3" id="about-title">About Me</h2>
-                    <p class="about-p">
+                    <p class="section-subtitle" data-i18n="about.subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3" id="about-title" data-i18n="about.title">About Me</h2>
+                    <p class="about-p" data-i18n="about.p1">
                         Experienced Software Engineer with over <strong>5 years of expertise</strong> in designing,
                         developing,
                         and deploying robust applications using <strong>Laravel, Vue.js, and modern web
@@ -140,14 +137,14 @@
                         Skilled in creating scalable, efficient solutions tailored to business needs with a focus on
                         <strong>performance, security, and user experience</strong>.
                     </p>
-                    <p class="about-p mt-3">
+                    <p class="about-p mt-3" data-i18n="about.p2">
                         Successfully contributed to projects in diverse fields, including <strong>fintech, education,
                             e-commerce, and enterprise resource planning (ERP)</strong>, delivering high-quality
                         software
                         solutions that drive tangible business results. Passionate about solving complex problems,
                         adopting best practices, and thriving in collaborative environments as a Full-Stack Developer.
                     </p>
-                    <button id="download-cv" class="btn btn-outline-primary btn-rounded mt-4 px-5 py-2">
+                    <button id="download-cv" class="btn btn-outline-primary btn-rounded mt-4 px-5 py-2" data-i18n="about.downloadCV">
                         Download CV
                     </button>
                 </div>
@@ -161,12 +158,12 @@
     <!-- Skills Section -->
     <section class="section bg-light" id="skills">
         <div class="container text-center">
-            <p class="section-subtitle">My Expertise</p>
-            <h6 class="section-title mb-6">Technical Skills</h6>
+            <p class="section-subtitle" data-i18n="skills.subtitle">My Expertise</p>
+            <h6 class="section-title mb-6" data-i18n="skills.title">Technical Skills</h6>
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="skill-category">
-                        <h5 class="mb-3"><i class="ti-server text-primary"></i> Backend Development</h5>
+                        <h5 class="mb-3"><i class="ti-server text-primary"></i> <span data-i18n="skills.backend">Backend Development</span></h5>
                         <div class="skill-tags">
                             <span class="badge badge-primary">PHP</span>
                             <span class="badge badge-primary">Laravel</span>
@@ -179,7 +176,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="skill-category">
-                        <h5 class="mb-3"><i class="ti-layout text-primary"></i> Frontend Development</h5>
+                        <h5 class="mb-3"><i class="ti-layout text-primary"></i> <span data-i18n="skills.frontend">Frontend Development</span></h5>
                         <div class="skill-tags">
                             <span class="badge badge-primary">Vue.js</span>
                             <span class="badge badge-primary">JavaScript</span>
@@ -192,7 +189,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="skill-category">
-                        <h5 class="mb-3"><i class="ti-database text-primary"></i> Database & Tools</h5>
+                        <h5 class="mb-3"><i class="ti-database text-primary"></i> <span data-i18n="skills.database">Database & Tools</span></h5>
                         <div class="skill-tags">
                             <span class="badge badge-primary">MySQL</span>
                             <span class="badge badge-primary">Git/GitHub</span>
@@ -211,8 +208,8 @@
     <!-- service section -->
     <section class="section" id="service" aria-labelledby="service-title">
         <div class="container text-center">
-            <p class="section-subtitle">What I Do ?</p>
-            <h6 class="section-title mb-6" id="service-title">Services</h6>
+            <p class="section-subtitle" data-i18n="services.subtitle">What I Do ?</p>
+            <h6 class="section-title mb-6" id="service-title" data-i18n="services.title">Services</h6>
             <!-- row -->
             <div class="row">
                 <div class="col-md-6 col-lg-3">
@@ -220,7 +217,7 @@
                         <div class="body">
                             <img src="assets/imgs/agile-mehodlogy.svg" alt="Agile Development Methodology"
                                 class="icon" loading="lazy">
-                            <h6 class="title">Agile Development</h6>
+                            <h6 class="title" data-i18n="services.agile">Agile Development</h6>
                         </div>
                     </div>
                 </div>
@@ -229,7 +226,7 @@
                         <div class="body">
                             <img src="assets/imgs/tailored.svg" alt="Tailored Development Solutions" class="icon"
                                 loading="lazy">
-                            <h6 class="title">Tailored Development</h6>
+                            <h6 class="title" data-i18n="services.tailored">Tailored Development</h6>
                         </div>
                     </div>
                 </div>
@@ -238,7 +235,7 @@
                         <div class="body">
                             <img src="assets/imgs/solutions.svg" alt="Customized Software Solutions" class="icon"
                                 loading="lazy">
-                            <h6 class="title">Customized Solutions</h6>
+                            <h6 class="title" data-i18n="services.customized">Customized Solutions</h6>
                         </div>
                     </div>
                 </div>
@@ -247,7 +244,7 @@
                         <div class="body">
                             <img src="assets/imgs/testing-data-icon.png" alt="Support and Maintenance Services"
                                 class="icon" loading="lazy">
-                            <h6 class="title">Support & Maintenance</h6>
+                            <h6 class="title" data-i18n="services.support">Support & Maintenance</h6>
                         </div>
                     </div>
                 </div>
@@ -260,8 +257,8 @@
     <!-- portfolio section -->
     <section class="section" id="portfolio" aria-labelledby="portfolio-title">
         <div class="text-center">
-            <p class="section-subtitle">What I Did ?</p>
-            <h6 class="section-title mb-6" id="portfolio-title">Portfolio</h6>
+            <p class="section-subtitle" data-i18n="portfolio.subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6" id="portfolio-title" data-i18n="portfolio.title">Portfolio</h6>
             <!-- row -->
             <div class="row mb-3">
                 <div class="col-md-4">
@@ -270,8 +267,8 @@
                             class="img-responsive rounded" alt="School Management System Dashboard" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4 class="mt-5">School management system</h4>
-                                <p class="font-weight-normal px-4">School management system. built with Laravel and
+                                <h4 class="mt-5" data-i18n="portfolio.school.title">School management system</h4>
+                                <p class="font-weight-normal px-4" data-i18n="portfolio.school.desc">School management system. built with Laravel and
                                     Vuejs</p>
                             </span>
                         </span>
@@ -283,8 +280,8 @@
                             class="img-responsive rounded" alt="Learning Management System Interface" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4 class="mt-5">Learning management system</h4>
-                                <p class="font-weight-normal px-4">An online platform for managing and delivering
+                                <h4 class="mt-5" data-i18n="portfolio.lms1.title">Learning management system</h4>
+                                <p class="font-weight-normal px-4" data-i18n="portfolio.lms1.desc">An online platform for managing and delivering
                                     educational content and courses.</p>
                             </span>
                         </span>
@@ -296,8 +293,8 @@
                             class="img-responsive rounded" alt="Educational Platform Dashboard" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4 class="mt-5">Learning Management System</h4>
-                                <p class="font-weight-normal px-4">An online platform for managing and delivering
+                                <h4 class="mt-5" data-i18n="portfolio.lms2.title">Learning Management System</h4>
+                                <p class="font-weight-normal px-4" data-i18n="portfolio.lms2.desc">An online platform for managing and delivering
                                     educational content and courses.</p>
                             </span>
                         </span>
@@ -311,8 +308,8 @@
                             class="img-responsive rounded" alt="Amat Rozy Artist Portfolio" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4 class="mt-5">Amat-Rozy</h4>
-                                <p class="font-weight-normal px-4">Amat Rozy is a portfolio for an artist, made with
+                                <h4 class="mt-5" data-i18n="portfolio.amat.title">Amat-Rozy</h4>
+                                <p class="font-weight-normal px-4" data-i18n="portfolio.amat.desc">Amat Rozy is a portfolio for an artist, made with
                                     bootstrap, jQuery
                                     and PHP Codeigniter.</p>
                             </span>
@@ -325,8 +322,8 @@
                             alt="Yemen Telecom Statistical System" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4 class="mt-5">Statistical System</h4>
-                                <p class="font-weight-normal px-4">A statistical system built for Yemen Telecom
+                                <h4 class="mt-5" data-i18n="portfolio.statistical.title">Statistical System</h4>
+                                <p class="font-weight-normal px-4" data-i18n="portfolio.statistical.desc">A statistical system built for Yemen Telecom
                                     corporation.</p>
                             </span>
                         </span>
@@ -338,8 +335,8 @@
                             class="img-responsive rounded" alt="Enterprise Resource Planning System" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>ERP Software</h4>
-                                <p class="font-weight-normal">A software system that helps organizations manage and
+                                <h4 data-i18n="portfolio.erp.title">ERP Software</h4>
+                                <p class="font-weight-normal" data-i18n="portfolio.erp.desc">A software system that helps organizations manage and
                                     integrate key parts
                                     of their business operations.</p>
                             </span>
@@ -354,8 +351,8 @@
                             alt="Documentary Management System" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Documentary System</h4>
-                                <p class="font-weight-normal">A software system for documenting other software systems.
+                                <h4 data-i18n="portfolio.documentary.title">Documentary System</h4>
+                                <p class="font-weight-normal" data-i18n="portfolio.documentary.desc">A software system for documenting other software systems.
                                 </p>
                             </span>
                         </span>
@@ -367,8 +364,8 @@
                             class="img-responsive rounded" alt="E-commerce Platform Dashboard" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>E-commerce</h4>
-                                <p class="font-weight-normal">A software for buying and selling services over the
+                                <h4 data-i18n="portfolio.ecommerce.title">E-commerce</h4>
+                                <p class="font-weight-normal" data-i18n="portfolio.ecommerce.desc">A software for buying and selling services over the
                                     internet.</p>
                             </span>
                         </span>
@@ -380,8 +377,8 @@
                             class="img-responsive rounded" alt="Employee ID Card Management System" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>ID Cards</h4>
-                                <p class="font-weight-normal">A software to manage employees' cards.</p>
+                                <h4 data-i18n="portfolio.idcards.title">ID Cards</h4>
+                                <p class="font-weight-normal" data-i18n="portfolio.idcards.desc">A software to manage employees' cards.</p>
                             </span>
                         </span>
                     </a>
@@ -399,11 +396,11 @@
             <!-- row -->
             <div class="row align-items-center">
                 <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                    <h6 class="title text-light">Want to work with me?</h6>
-                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
+                    <h6 class="title text-light" data-i18n="cta.title">Want to work with me?</h6>
+                    <p class="m-0 text-light" data-i18n="cta.subtitle">Always feel Free to Contact & Hire me</p>
                 </div>
                 <div class="col-sm offset-sm-2 offset-md-3">
-                    <a href="#contact"><button class="btn btn-lg my-font btn-light rounded">Hire Me</button></a>
+                    <a href="#contact"><button class="btn btn-lg my-font btn-light rounded" data-i18n="cta.button">Hire Me</button></a>
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -414,8 +411,8 @@
     <section class="section" id="blog" aria-labelledby="experience-title">
         <!-- container -->
         <div class="container text-center">
-            <p class="section-subtitle">Where Have I Worked?</p>
-            <h6 class="section-title mb-6" id="experience-title">Professional Experience</h6>
+            <p class="section-subtitle" data-i18n="experience.subtitle">Where Have I Worked?</p>
+            <h6 class="section-title mb-6" id="experience-title" data-i18n="experience.title">Professional Experience</h6>
             <!-- blog-wrapper -->
             <div class="blog-card">
                 <div class="blog-card-header">
@@ -423,37 +420,37 @@
                         alt="NOOT Company Logo" loading="lazy">
                 </div>
                 <div class="blog-card-body">
-                    <h4 class="blog-card-title">Software Engineer</h4>
-                    <h6 class="blog-card-caption"><strong>NOOT | نوت</strong> • Full-time • Jan 2025 - Present</h6>
-                    <p class="text-muted mb-3"><i class="ti-location-pin"></i> Remote • Saudi Arabia</p>
+                    <h4 class="blog-card-title" data-i18n="exp.noot.title">Software Engineer</h4>
+                    <h6 class="blog-card-caption"><strong data-i18n="exp.noot.company">NOOT | نوت</strong> • <span data-i18n="exp.noot.period">Full-time • Jan 2025 - Present</span></h6>
+                    <p class="text-muted mb-3"><i class="ti-location-pin"></i> <span data-i18n="exp.noot.location">Remote • Saudi Arabia</span></p>
 
-                    <p>
+                    <p data-i18n="exp.noot.p1">
                         Working as a Software Engineer at <strong>NOOT</strong>, a leading SaaS platform providing
                         comprehensive
                         business management solutions including HR management, financial accounting, POS systems, CRM,
                         and inventory management for businesses across Saudi Arabia and the region.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.noot.p2">
                         Developing and maintaining core features of the platform using <strong>Laravel</strong> and
                         <strong>Laravel Filament</strong>, building intuitive admin panels and management dashboards
                         that serve thousands of businesses managing their daily operations efficiently.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.noot.p3">
                         Implementing <strong>RESTful APIs</strong> and backend services for multiple integrated modules
                         including
                         HR systems, financial accounting, inventory tracking, and CRM functionalities, ensuring seamless
                         data flow and system integration across the platform.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.noot.p4">
                         Contributing to system architecture decisions, optimizing database queries for performance at
                         scale,
                         and implementing security best practices to protect sensitive business and financial data.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.noot.p5">
                         Collaborating with product managers and cross-functional teams in an agile environment to
                         deliver
                         new features, enhance user experience, and maintain high code quality standards through code
@@ -470,33 +467,33 @@
                         alt="Freelance Software Engineer" loading="lazy">
                 </div>
                 <div class="blog-card-body">
-                    <h4 class="blog-card-title">Software Engineer</h4>
-                    <h6 class="blog-card-caption"><strong>Freelance</strong> • Aug 2019 - Present</h6>
+                    <h4 class="blog-card-title" data-i18n="exp.freelance.title">Software Engineer</h4>
+                    <h6 class="blog-card-caption"><strong data-i18n="exp.freelance.company">Freelance</strong> • <span data-i18n="exp.freelance.period">Aug 2019 - Present</span></h6>
 
-                    <p>
+                    <p data-i18n="exp.freelance.p1">
                         Delivered custom web solutions for clients across various industries, focusing on developing
                         efficient,
                         user-friendly, and scalable applications.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.freelance.p2">
                         Worked on diverse projects, including e-commerce platforms, management systems, and dynamic
                         reporting tools,
                         leveraging technologies like <strong>Laravel, Vue.js, Bootstrap, Tailwind CSS, JavaScript,
                             jQuery, MySQL</strong>.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.freelance.p3">
                         Provided end-to-end development services, including requirement analysis, design, development,
                         testing, and deployment.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.freelance.p4">
                         Specialized in enhancing existing systems, optimizing performance, fixing bugs,
                         and integrating third-party APIs to meet unique business needs.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.freelance.p5">
                         Built strong client relationships through effective communication, on-time delivery,
                         and delivering high-quality results.
                     </p>
@@ -510,10 +507,10 @@
                         loading="lazy">
                 </div>
                 <div class="blog-card-body">
-                    <h4 class="blog-card-title">Software Engineer</h4>
-                    <h6 class="blog-card-caption"><strong>Wings Company</strong> • Dec 2023 - Aug 2024</h6>
+                    <h4 class="blog-card-title" data-i18n="exp.wings.title">Software Engineer</h4>
+                    <h6 class="blog-card-caption"><strong data-i18n="exp.wings.company">Wings Company</strong> • <span data-i18n="exp.wings.period">Dec 2023 - Aug 2024</span></h6>
 
-                    <p>
+                    <p data-i18n="exp.wings.p1">
                         Improved and maintained an existing <strong>School Management System (SMS)</strong> built with
                         Laravel
                         and Vue.js, optimizing code quality, fixing runtime issues, enhancing database queries,
@@ -521,7 +518,7 @@
                         APIs to support mobile application integration.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.wings.p2">
                         Contributed to a <strong>Learning Management System (LMS)</strong> project built with Laravel
                         and Tailwind,
                         adding new features to enhance functionality. Successfully integrated CodePay as a payment
@@ -530,7 +527,7 @@
                         courses.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.wings.p3">
                         Focused on delivering high-performing, scalable solutions while ensuring code maintainability
                         and system efficiency.
                     </p>
@@ -544,17 +541,17 @@
                         loading="lazy">
                 </div>
                 <div class="blog-card-body">
-                    <h4 class="blog-card-title">Software Engineer</h4>
-                    <h6 class="blog-card-caption"><strong>KitSys Company</strong> • Jun 2023 - Nov 2023</h6>
+                    <h4 class="blog-card-title" data-i18n="exp.kitsys.title">Software Engineer</h4>
+                    <h6 class="blog-card-caption"><strong data-i18n="exp.kitsys.company">KitSys Company</strong> • <span data-i18n="exp.kitsys.period">Jun 2023 - Nov 2023</span></h6>
 
-                    <p>
+                    <p data-i18n="exp.kitsys.p1">
                         Developed and maintained APIs for a <strong>School Management System (SMS)</strong> using
                         Laravel,
                         handling core functionalities such as managing students, teachers, and subjects.
                         Implemented a microservices architecture where services communicated seamlessly via gRPC.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.kitsys.p2">
                         Built an <strong>e-commerce project dashboard</strong> using Laravel Filament, enabling
                         efficient
                         management of the platform. Designed and deployed APIs to support integration with a mobile
@@ -562,7 +559,7 @@
                         ensuring smooth user experiences across devices.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.kitsys.p3">
                         Focused on delivering scalable, robust, and maintainable backend solutions while collaborating
                         closely with frontend and mobile teams to ensure successful project outcomes.
                     </p>
@@ -577,33 +574,33 @@
                         alt="Smart Life Company Logo" loading="lazy">
                 </div>
                 <div class="blog-card-body">
-                    <h4 class="blog-card-title">Full-Stack Developer</h4>
-                    <h6 class="blog-card-caption"><strong>Smart Life Company</strong> • Jul 2022 - May 2023</h6>
+                    <h4 class="blog-card-title" data-i18n="exp.smartlife.title">Full-Stack Developer</h4>
+                    <h6 class="blog-card-caption"><strong data-i18n="exp.smartlife.company">Smart Life Company</strong> • <span data-i18n="exp.smartlife.period">Jul 2022 - May 2023</span></h6>
 
-                    <p>
+                    <p data-i18n="exp.smartlife.p1">
                         Enhanced and maintained an existing ERP system built with the PHP CodeIgniter framework,
                         resolving bugs, optimizing performance, and improving code quality for better maintainability
                         and efficiency.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.smartlife.p2">
                         Developed a <strong>smart dynamic reporting feature</strong>, empowering customers to generate
                         custom reports tailored to
                         their specific needs, improving data accessibility and decision-making capabilities.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.smartlife.p3">
                         Designed and implemented a <strong>documentary system</strong> using Laravel, centralizing and
                         organizing
                         company system documents for streamlined access and management.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.smartlife.p4">
                         Collaborated with stakeholders to identify improvement opportunities, implement
                         new features, and ensure the ERP system met evolving business requirements.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.smartlife.p5">
                         Focused on delivering high-quality solutions that enhanced system usability and customer
                         satisfaction.
                     </p>
@@ -619,33 +616,33 @@
                         loading="lazy">
                 </div>
                 <div class="blog-card-body">
-                    <h4 class="blog-card-title">Full-Stack Developer</h4>
-                    <h6 class="blog-card-caption"><strong>Ysys Company</strong> • Jun 2021 - May 2022</h6>
-                    <p>
+                    <h4 class="blog-card-title" data-i18n="exp.ysys.title">Full-Stack Developer</h4>
+                    <h6 class="blog-card-caption"><strong data-i18n="exp.ysys.company">Ysys Company</strong> • <span data-i18n="exp.ysys.period">Jun 2021 - May 2022</span></h6>
+                    <p data-i18n="exp.ysys.p1">
                         Designed and developed scalable web applications, with a focus on both server-side logic and
                         client-side components.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.ysys.p2">
                         Contributed significantly to Floosak, a <strong>finance wallet</strong> built with Laravel,
                         handling various aspects
                         including report generation, problem-solving, feature implementation, and integration
                         with third-party providers to enhance functionality.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.ysys.p3">
                         Integrated <strong>third-party APIs</strong> and services to expand application
                         capabilities and ensure seamless interoperability.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.ysys.p4">
                         Managed and maintained various server environments, including hosting
                         solutions, database management systems, and cloud infrastructure (e.g., <strong>Forge</strong>,
                         Namecheap),
                         ensuring optimal performance and reliability.
                     </p>
 
-                    <p>
+                    <p data-i18n="exp.ysys.p5">
                         Collaborated with team members to support development efforts, ensuring smooth integration
                         of code and overall project success.
                     </p>
@@ -661,8 +658,8 @@
     <!-- education section -->
     <section class="section pb-0" id="testmonial" aria-labelledby="education-title">
         <div class="container text-center">
-            <p class="section-subtitle">Academic Background</p>
-            <h6 class="section-title mb-3" id="education-title">Education</h6>
+            <p class="section-subtitle" data-i18n="education.subtitle">Academic Background</p>
+            <h6 class="section-title mb-3" id="education-title" data-i18n="education.title">Education</h6>
         </div>
     </section>
 
@@ -671,12 +668,12 @@
         <div class="container text-center text-sm-left">
             <div class="row align-items-center">
                 <div class="col-sm text-center">
-                    <p class="text-light mr-4"><i class="ti-calendar"></i> 2015 - 2019</p>
-                    <h6 class="title text-light mr-2">Bachelor of Science</h6>
-                    <span class="m-0 text-light h6">Information Technology</span>
+                    <p class="text-light mr-4"><i class="ti-calendar"></i> <span data-i18n="education.period">2015 - 2019</span></p>
+                    <h6 class="title text-light mr-2" data-i18n="education.degree">Bachelor of Science</h6>
+                    <span class="m-0 text-light h6" data-i18n="education.major">Information Technology</span>
                 </div>
             </div>
-            <p class="text-light text-center"><i class="ti-location-pin"></i> Sana'a University, Yemen</p>
+            <p class="text-light text-center"><i class="ti-location-pin"></i> <span data-i18n="education.university">Sana'a University, Yemen</span></p>
         </div>
     </section>
     <!-- end of section -->
@@ -686,15 +683,15 @@
     <!-- contact section -->
     <section class="section" id="contact" aria-labelledby="contact-title">
         <div class="container text-center">
-            <p class="section-subtitle">Let's Connect</p>
-            <h6 class="mb-md-3 section-title" id="contact-title">Get In Touch</h6>
+            <p class="section-subtitle" data-i18n="contact.subtitle">Let's Connect</p>
+            <h6 class="mb-md-3 section-title" id="contact-title" data-i18n="contact.title">Get In Touch</h6>
             <div class="row">
                 <div class="col-md-6 font-italic pb-3 text-md-left">
-                    <div><i class="ti-email"></i> <strong>Email:</strong> <a href="mailto:hamzawemughales@gmail.com"
+                    <div><i class="ti-email"></i> <strong data-i18n="contact.email">Email:</strong> <a href="mailto:hamzawemughales@gmail.com"
                             class="text-dark">hamzawemughales@gmail.com</a></div>
-                    <div><i class="ti-mobile"></i> <strong>Phone:</strong> <a href="tel:+967771796968"
-                            class="text-dark">+967 77 179 6968</a></div>
-                    <div><i class="ti-location-pin"></i> <strong>Location:</strong> Yemen</div>
+                    <div><i class="ti-mobile"></i> <strong data-i18n="contact.phone">Phone:</strong> <a href="tel:+967771796968"
+                            class="text-dark" dir="ltr">+967 77 179 6968</a></div>
+                    <div><i class="ti-location-pin"></i> <strong data-i18n="contact.location">Location:</strong> <span data-i18n="contact.locationValue">Yemen</span></div>
                 </div>
                 <div class="col-md-6">
                     <div class="list-inline">
@@ -740,6 +737,7 @@
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lang.js"></script>
 </body>
 
 </html>
