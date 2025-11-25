@@ -622,3 +622,29 @@ body.fade-in {
 .loading {
   animation: pulse 1.5s ease-in-out infinite;
 }
+
+/* Sticky Navbar (replaces Bootstrap affix) */
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.custom-navbar.affix {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.custom-navbar.affix .nav .link {
+  color: var(--dark-color) !important;
+}
+
+.custom-navbar.affix .nav .link:hover,
+.custom-navbar.affix .nav .link.active {
+  color: var(--primary-color) !important;
+}
