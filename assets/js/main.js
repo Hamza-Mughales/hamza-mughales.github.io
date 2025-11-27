@@ -47,6 +47,39 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe all sections and cards
 document.addEventListener('DOMContentLoaded', () => {
+    // Navbar toggle functionality
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.querySelector('ul.nav');
+    
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+            this.classList.toggle('is-active');
+            navMenu.classList.toggle('show');
+        });
+        
+        // Close menu when clicking on a link
+        const navLinks = navMenu.querySelectorAll('.link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navToggle.classList.remove('is-active');
+                navMenu.classList.remove('show');
+            });
+        });
+    }
+    
+    // Sticky navbar on scroll
+    const navbar = document.querySelector('.custom-navbar');
+    if (navbar) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 20) {
+                navbar.classList.add('affix');
+            } else {
+                navbar.classList.remove('affix');
+            }
+        });
+    }
+    
+    // Scroll animations
     const elementsToAnimate = document.querySelectorAll(
         '.service-card, .portfolio-card, .blog-card, .skill-category, section'
     );
@@ -55,18 +88,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add fade-in class to body
     document.body.classList.add('loaded');
     
-    // Update nav toggle aria-expanded
-    const navToggle = document.getElementById('nav-toggle');
-    if (navToggle) {
-        navToggle.addEventListener('click', function() {
-            const isExpanded = this.getAttribute('aria-expanded') === 'true';
-            this.setAttribute('aria-expanded', !isExpanded);
-        });
-    }
-    
     // Active nav link highlighting on scroll
     const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.navbar .nav .link');
+    const navLinksAll = document.querySelectorAll('.navbar .nav .link');
     
     function highlightNavigation() {
         const scrollY = window.pageYOffset;
@@ -77,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const sectionId = section.getAttribute('id');
             
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                navLinks.forEach(link => {
+                navLinksAll.forEach(link => {
                     link.classList.remove('active');
                     if (link.getAttribute('href') === `#${sectionId}`) {
                         link.classList.add('active');
