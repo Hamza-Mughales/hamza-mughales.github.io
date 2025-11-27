@@ -71,9 +71,9 @@ body.rtl .header-buttons {
 }
 
 /* Mobile Header Adjustments for Arabic */
-@media (max-width: 768px) {
+@media (max-width: 991.98px) {
     body.rtl .header-content {
-        padding: 100px 20px 80px;
+        padding: 100px 20px 80px !important;
     }
     
     body.rtl .header-content::before {
@@ -97,10 +97,16 @@ body.rtl .header-buttons {
     }
 }
 
+/* Ensure no horizontal scroll */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 /* Extra small devices for Arabic */
 @media (max-width: 480px) {
     body.rtl .header-content {
-        padding: 80px 15px 60px;
+        padding: 80px 15px 60px !important;
     }
     
     body.rtl .header-content::before {
