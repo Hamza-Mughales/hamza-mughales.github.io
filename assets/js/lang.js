@@ -31,13 +31,6 @@ const translations = {
         'skills.frontend': 'Frontend Development',
         'skills.database': 'Database & Tools',
 
-        // Services Section
-        'services.subtitle': 'What I Do ?',
-        'services.title': 'Services',
-        'services.agile': 'Agile Development',
-        'services.tailored': 'Tailored Development',
-        'services.customized': 'Customized Solutions',
-        'services.support': 'Support & Maintenance',
 
         // Portfolio Section
         'portfolio.subtitle': 'What I Did ?',
@@ -62,9 +55,18 @@ const translations = {
         'portfolio.idcards.desc': 'A software to manage employees\' cards.',
 
         // CTA Section
-        'cta.title': 'Want to work with me?',
-        'cta.subtitle': 'Always feel Free to Contact & Hire me',
-        'cta.button': 'Hire Me',
+        'cta.badge': 'Available for Projects',
+        'cta.title': "Let's Build Something Amazing Together",
+        'cta.description': "I'm currently available for freelance projects and full-time opportunities. Whether you need a complete web application or want to enhance your existing system, I can help bring your vision to life.",
+        'cta.benefit1': '5+ Years Experience',
+        'cta.benefit2': 'Fast Response Time (< 24h)',
+        'cta.benefit3': 'Quality Guaranteed',
+        'cta.button1': 'Get in Touch',
+        'cta.button2': 'WhatsApp Me',
+        'cta.note': 'Typical response time: Within 24 hours',
+        'cta.stat1': 'Projects Completed',
+        'cta.stat2': 'Years Experience',
+        'cta.stat3': 'Client Satisfaction',
 
         // Experience Section
         'experience.subtitle': 'Where Have I Worked?',
@@ -138,10 +140,17 @@ const translations = {
         // Contact Section
         'contact.subtitle': 'Let\'s Connect',
         'contact.title': 'Get In Touch',
-        'contact.email': 'Email:',
-        'contact.phone': 'Phone:',
-        'contact.location': 'Location:',
-        'contact.locationValue': 'Yemen',
+        'contact.description': 'Have a project in mind? Let\'s discuss how I can help you achieve your goals.',
+
+
+        'contact.email': 'Email',
+        'contact.responseTime': 'Response time: < 24 hours',
+        'contact.phone': 'Phone / WhatsApp',
+        'contact.whatsapp': 'Message on WhatsApp',
+        'contact.location': 'Location',
+        'contact.locationValue': 'Yemen (Remote Work Available)',
+        'contact.social': 'Connect on Social Media',
+        'contact.available': 'Available for new projects',
 
         // Footer
         'footer.rights': 'Hamza Mughales'
@@ -177,13 +186,6 @@ const translations = {
         'skills.frontend': 'تطوير الواجهة الأمامية',
         'skills.database': 'قواعد البيانات والأدوات',
 
-        // Services Section
-        'services.subtitle': 'ماذا أقدم؟',
-        'services.title': 'الخدمات',
-        'services.agile': 'التطوير السريع',
-        'services.tailored': 'التطوير المخصص',
-        'services.customized': 'حلول مخصصة',
-        'services.support': 'الدعم والصيانة',
 
         // Portfolio Section
         'portfolio.subtitle': 'ماذا أنجزت؟',
@@ -208,9 +210,18 @@ const translations = {
         'portfolio.idcards.desc': 'برنامج لإدارة بطاقات الموظفين.',
 
         // CTA Section
-        'cta.title': 'هل تريد العمل معي؟',
-        'cta.subtitle': 'لا تتردد في التواصل وتوظيفي',
-        'cta.button': 'وظفني',
+        'cta.badge': 'متاح للمشاريع',
+        'cta.title': 'لنبني شيئاً مذهلاً معاً',
+        'cta.description': 'أنا متاح حالياً لمشاريع العمل الحر والفرص بدوام كامل. سواء كنت بحاجة إلى تطبيق ويب كامل أو ترغب في تحسين نظامك الحالي، يمكنني المساعدة في تحويل رؤيتك إلى واقع.',
+        'cta.benefit1': 'خبرة أكثر من 5 سنوات',
+        'cta.benefit2': 'وقت استجابة سريع (أقل من 24 ساعة)',
+        'cta.benefit3': 'جودة مضمونة',
+        'cta.button1': 'تواصل معي',
+        'cta.button2': 'راسلني على واتساب',
+        'cta.note': 'وقت الاستجابة المعتاد: خلال 24 ساعة',
+        'cta.stat1': 'مشروع مكتمل',
+        'cta.stat2': 'سنوات خبرة',
+        'cta.stat3': 'رضا العملاء',
 
         // Experience Section
         'experience.subtitle': 'أين عملت؟',
@@ -284,10 +295,17 @@ const translations = {
         // Contact Section
         'contact.subtitle': 'لنتواصل',
         'contact.title': 'تواصل معي',
-        'contact.email': 'البريد الإلكتروني:',
-        'contact.phone': 'الهاتف:',
-        'contact.location': 'الموقع:',
-        'contact.locationValue': 'اليمن',
+        'contact.description': 'هل لديك مشروع في ذهنك؟ دعنا نناقش كيف يمكنني مساعدتك في تحقيق أهدافك.',
+
+
+        'contact.email': 'البريد الإلكتروني',
+        'contact.responseTime': 'وقت الاستجابة: أقل من 24 ساعة',
+        'contact.phone': 'الهاتف / واتساب',
+        'contact.whatsapp': 'راسلني على واتساب',
+        'contact.location': 'الموقع',
+        'contact.locationValue': 'اليمن (العمل عن بُعد متاح)',
+        'contact.social': 'تواصل عبر وسائل التواصل الاجتماعي',
+        'contact.available': 'متاح لمشاريع جديدة',
 
         // Footer
         'footer.rights': 'حمزة المغلس'
@@ -337,6 +355,15 @@ function setLanguage(lang) {
         const key = element.getAttribute('data-i18n');
         if (translations[lang][key]) {
             element.innerHTML = translations[lang][key];
+        }
+    });
+
+    // Update placeholders
+    const placeholders = document.querySelectorAll('[data-i18n-placeholder]');
+    placeholders.forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        if (translations[lang][key]) {
+            element.setAttribute('placeholder', translations[lang][key]);
         }
     });
     

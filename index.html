@@ -16,6 +16,9 @@
     <title>Hamza Mughales - Software Engineer | Full-Stack Developer Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/imgs/mee.png">
     <link rel="canonical" href="https://hamza-mughales.github.io/">
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="assets/css/style.css">
     
     <script type="application/ld+json">
@@ -42,27 +45,34 @@
 </head>
 
 <body id="home" class="fade-in">
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Navbar -->
-    <nav class="custom-navbar" role="navigation">
+    <nav class="custom-navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
-            <a class="logo" href="#home"></a>
-            <ul class="nav">
-                <li class="item"><a class="link" href="#home" data-i18n="nav.home">Home</a></li>
-                <li class="item"><a class="link" href="#about" data-i18n="nav.about">About</a></li>
-                <li class="item"><a class="link" href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
-                <li class="item"><a class="link" href="#testmonial" data-i18n="nav.education">Education</a></li>
-                <li class="item"><a class="link" href="#blog" data-i18n="nav.experience">Experience</a></li>
-                <li class="item"><a class="link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+            <a class="logo" href="#home" aria-label="Home"></a>
+            <ul class="nav" id="main-nav" role="menubar">
+                <li class="item" role="none"><a class="link" href="#home" role="menuitem" data-i18n="nav.home">Home</a></li>
+                <li class="item" role="none"><a class="link" href="#about" role="menuitem" data-i18n="nav.about">About</a></li>
+                <li class="item" role="none"><a class="link" href="#portfolio" role="menuitem" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li class="item" role="none"><a class="link" href="#education" role="menuitem" data-i18n="nav.education">Education</a></li>
+                <li class="item" role="none"><a class="link" href="#blog" role="menuitem" data-i18n="nav.experience">Experience</a></li>
+                <li class="item" role="none"><a class="link" href="#contact" role="menuitem" data-i18n="nav.contact">Contact</a></li>
             </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic" 
+               aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
                 <div class="hamburger-box"><div class="hamburger-inner"></div></div>
             </a>
-            <button id="lang-toggle" class="btn"><i class="ti-world"></i> العربية</button>
+            <button id="lang-toggle" class="btn" aria-label="Switch to Arabic language">
+                <i class="ti-world" aria-hidden="true"></i> العربية
+            </button>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header id="home" class="header">
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Header -->
+        <header id="home" class="header">
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
@@ -81,8 +91,8 @@
     <section class="section pt-0" id="about">
         <div class="container text-center">
             <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/mee.png" class="about-img" alt="Hamza Mughales">
+                <div class="img-wrapper">
+                    <img src="assets/imgs/mee.png" class="about-img" alt="Hamza Mughales" loading="lazy">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle" data-i18n="about.subtitle">Who Am I ?</p>
@@ -148,47 +158,7 @@
         </div>
     </section>
 
-    <!-- Services -->
-    <section class="section" id="service">
-        <div class="container text-center">
-            <p class="section-subtitle" data-i18n="services.subtitle">What I Do ?</p>
-            <h6 class="section-title mb-6" data-i18n="services.title">Services</h6>
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/agile-mehodlogy.svg" alt="Agile Development" class="icon">
-                            <h6 class="title" data-i18n="services.agile">Agile Development</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/tailored.svg" alt="Tailored Development" class="icon">
-                            <h6 class="title" data-i18n="services.tailored">Tailored Development</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/solutions.svg" alt="Customized Solutions" class="icon">
-                            <h6 class="title" data-i18n="services.customized">Customized Solutions</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/testing-data-icon.png" alt="Support & Maintenance" class="icon">
-                            <h6 class="title" data-i18n="services.support">Support & Maintenance</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Portfolio -->
     <section class="section" id="portfolio">
@@ -198,7 +168,7 @@
             <div class="row mb-3">
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Wings/school-system.png" alt="School Management System">
+                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Wings/school-system.png" alt="School Management System" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 class="mt-5" data-i18n="portfolio.school.title">School management system</h4>
@@ -209,7 +179,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Wings/LMS1.png" alt="Learning Management System">
+                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Wings/LMS1.png" alt="Learning Management System" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 class="mt-5" data-i18n="portfolio.lms1.title">Learning management system</h4>
@@ -220,7 +190,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Wings/LMS.png" alt="Educational Platform">
+                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Wings/LMS.png" alt="Educational Platform" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 class="mt-5" data-i18n="portfolio.lms2.title">Learning Management System</h4>
@@ -233,7 +203,7 @@
             <div class="row mb-3">
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Amat/Amat Rozy.jpeg" alt="Amat Rozy Portfolio">
+                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Amat/Amat Rozy.jpeg" alt="Amat Rozy Portfolio" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 class="mt-5" data-i18n="portfolio.amat.title">Amat-Rozy</h4>
@@ -244,7 +214,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/portfolio/YT/Home.png" class="portfolio-card-img" alt="Statistical System">
+                        <img src="assets/imgs/portfolio/YT/Home.png" class="portfolio-card-img" alt="Statistical System" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 class="mt-5" data-i18n="portfolio.statistical.title">Statistical System</h4>
@@ -255,7 +225,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/portfolio/SmartLife/ERP System.png" alt="ERP System">
+                        <img class="portfolio-card-img" src="assets/imgs/portfolio/SmartLife/ERP System.png" alt="ERP System" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 data-i18n="portfolio.erp.title">ERP Software</h4>
@@ -290,7 +260,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Subsystem/jobs.png" alt="ID Card Management">
+                        <img class="portfolio-card-img" src="assets/imgs/portfolio/Subsystem/jobs.png" alt="ID Card Management" loading="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 data-i18n="portfolio.idcards.title">ID Cards</h4>
@@ -303,20 +273,7 @@
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section-sm bg-primary">
-        <div class="container text-center">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h6 class="title text-light" data-i18n="cta.title">Want to work with me?</h6>
-                    <p class="m-0 text-light" data-i18n="cta.subtitle">Always feel Free to Contact & Hire me</p>
-                </div>
-                <div class="col-md-6">
-                    <a href="#contact"><button class="btn btn-light rounded" data-i18n="cta.button">Hire Me</button></a>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Experience -->
     <section class="section" id="blog">
@@ -326,7 +283,7 @@
             
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/experience/noot.png" class="blog-card-img logo-contain" alt="NOOT">
+                    <img src="assets/imgs/experience/noot.png" class="blog-card-img logo-contain" alt="NOOT" loading="lazy">
                 </div>
                 <div class="blog-card-body">
                     <h4 class="blog-card-title" data-i18n="exp.noot.title">Software Engineer</h4>
@@ -339,7 +296,7 @@
 
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/experience/Freelance.webp" class="blog-card-img" alt="Freelance">
+                    <img src="assets/imgs/experience/Freelance.webp" class="blog-card-img" alt="Freelance" loading="lazy">
                 </div>
                 <div class="blog-card-body">
                     <h4 class="blog-card-title" data-i18n="exp.freelance.title">Software Engineer</h4>
@@ -351,7 +308,7 @@
 
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/experience/wings.png" class="blog-card-img" alt="Wings Company">
+                    <img src="assets/imgs/experience/wings.png" class="blog-card-img" alt="Wings Company" loading="lazy">
                 </div>
                 <div class="blog-card-body">
                     <h4 class="blog-card-title" data-i18n="exp.wings.title">Software Engineer</h4>
@@ -362,7 +319,7 @@
 
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/experience/kitsys.jpg" class="blog-card-img" alt="KitSys">
+                    <img src="assets/imgs/experience/kitsys.jpg" class="blog-card-img" alt="KitSys" loading="lazy">
                 </div>
                 <div class="blog-card-body">
                     <h4 class="blog-card-title" data-i18n="exp.kitsys.title">Software Engineer</h4>
@@ -373,7 +330,7 @@
 
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/experience/smartlife.jpg" class="blog-card-img" alt="Smart Life">
+                    <img src="assets/imgs/experience/smartlife.jpg" class="blog-card-img" alt="Smart Life" loading="lazy">
                 </div>
                 <div class="blog-card-body">
                     <h4 class="blog-card-title" data-i18n="exp.smartlife.title">Full-Stack Developer</h4>
@@ -384,7 +341,7 @@
 
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/experience/ysys.png" class="blog-card-img" alt="Ysys">
+                    <img src="assets/imgs/experience/ysys.png" class="blog-card-img" alt="Ysys" loading="lazy">
                 </div>
                 <div class="blog-card-body">
                     <h4 class="blog-card-title" data-i18n="exp.ysys.title">Full-Stack Developer</h4>
@@ -396,47 +353,165 @@
         </div>
     </section>
 
-    <!-- Education -->
-    <section class="section pb-0" id="testmonial">
-        <div class="container text-center">
-            <p class="section-subtitle" data-i18n="education.subtitle">Academic Background</p>
-            <h6 class="section-title mb-3" data-i18n="education.title">Education</h6>
-        </div>
-    </section>
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <div class="education-bg-decoration"></div>
+        <div class="container">
+            <!-- Section Header -->
+            <div class="education-header text-center">
+                <p class="education-subtitle" data-i18n="education.subtitle">Academic Background</p>
+                <h2 class="education-title" data-i18n="education.title">Education</h2>
+            </div>
 
-    <section class="py-3 bg-primary">
-        <div class="container text-center">
-            <p class="text-light"><i class="ti-calendar"></i> <span data-i18n="education.period">2015 - 2019</span></p>
-            <h6 class="title text-light" data-i18n="education.degree">Bachelor of Science</h6>
-            <span class="m-0 text-light h6" data-i18n="education.major">Information Technology</span>
-            <p class="text-light mt-3"><i class="ti-location-pin"></i> <span data-i18n="education.university">Sana'a University, Yemen</span></p>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle" data-i18n="contact.subtitle">Let's Connect</p>
-            <h6 class="mb-3 section-title" data-i18n="contact.title">Get In Touch</h6>
-            <div class="row">
-                <div class="col-md-6 font-italic pb-3">
-                    <div><i class="ti-email"></i> <strong data-i18n="contact.email">Email:</strong> <a href="mailto:hamzawemughales@gmail.com" class="text-dark">hamzawemughales@gmail.com</a></div>
-                    <div><i class="ti-mobile"></i> <strong data-i18n="contact.phone">Phone:</strong> <a href="tel:+967771796968" class="text-dark" dir="ltr">+967 77 179 6968</a></div>
-                    <div><i class="ti-location-pin"></i> <strong data-i18n="contact.location">Location:</strong> <span data-i18n="contact.locationValue">Yemen</span></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="list-inline">
-                        <div class="list-inline-item">
-                            <a href="https://www.linkedin.com/in/hamza-saeed-8a44b7319/" target="_blank" rel="noopener noreferrer">
-                                <i class="ti-linkedin"></i>
-                            </a>
+            <!-- Education Card -->
+            <div class="education-card-wrapper">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <div class="icon-circle">
+                            🎓
                         </div>
-                        <div class="list-inline-item">
-                            <a href="https://github.com/Hamza-Mughales" target="_blank" rel="noopener noreferrer">
-                                <i class="ti-github"></i>
+                    </div>
+                    
+                    <div class="education-content">
+                        <div class="education-period">
+                            <i class="ti-calendar"></i>
+                            <span data-i18n="education.period">2015 - 2019</span>
+                        </div>
+                        
+                        <h3 class="education-degree" data-i18n="education.degree">Bachelor of Science</h3>
+                        
+                        <div class="education-major">
+                            <span class="major-badge" data-i18n="education.major">Information Technology</span>
+                        </div>
+                        
+                        <div class="education-location">
+                            <i class="ti-location-pin"></i>
+                            <span data-i18n="education.university">Sana'a University, Yemen</span>
+                        </div>
+                    </div>
+
+                    <div class="education-decoration">
+                        <div class="decoration-circle circle-1"></div>
+                        <div class="decoration-circle circle-2"></div>
+                        <div class="decoration-circle circle-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="contact-bg-decoration"></div>
+        <div class="container">
+            <!-- Header -->
+            <div class="contact-header text-center">
+                <span class="contact-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span data-i18n="cta.badge">Available for Projects</span>
+                </span>
+                <h2 class="contact-title" data-i18n="cta.title">Let's Build Something Amazing Together</h2>
+                <p class="contact-description" data-i18n="cta.description">
+                    I'm currently available for freelance projects and full-time opportunities. 
+                    Whether you need a complete web application or want to enhance your existing system, 
+                    I can help bring your vision to life.
+                </p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <h3 class="stat-number">20+</h3>
+                    <p class="stat-label" data-i18n="cta.stat1">Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <h3 class="stat-number">5+</h3>
+                    <p class="stat-label" data-i18n="cta.stat2">Years Experience</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <h3 class="stat-number">100%</h3>
+                    <p class="stat-label" data-i18n="cta.stat3">Client Satisfaction</p>
+                </div>
+            </div>
+
+            <!-- Contact Methods -->
+            <div class="contact-methods">
+                <div class="row">
+                    <!-- Email Card -->
+                    <div class="col-md-4 mb-4">
+                        <div class="contact-method-card">
+                            <div class="method-icon-wrapper">
+                                <div class="method-icon email-icon">
+                                    <i class="ti-email"></i>
+                                </div>
+                            </div>
+                            <h4 class="method-title" data-i18n="contact.email">Email</h4>
+                            <a href="mailto:hamzawemughales@gmail.com" class="method-link">
+                                hamzawemughales@gmail.com
+                            </a>
+                            <p class="method-info" data-i18n="contact.responseTime">Response time: < 24 hours</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div class="col-md-4 mb-4">
+                        <div class="contact-method-card">
+                            <div class="method-icon-wrapper">
+                                <div class="method-icon phone-icon">
+                                    <i class="ti-mobile"></i>
+                                </div>
+                            </div>
+                            <h4 class="method-title" data-i18n="contact.phone">Phone / WhatsApp</h4>
+                            <a href="tel:+967771796968" class="method-link" dir="ltr">
+                                +967 77 179 6968
+                            </a>
+                            <a href="https://wa.me/967771796968" class="whatsapp-action-btn" target="_blank" rel="noopener noreferrer">
+                                <i class="ti-comments"></i>
+                                <span data-i18n="contact.whatsapp">Message on WhatsApp</span>
                             </a>
                         </div>
                     </div>
+
+                    <!-- Location Card -->
+                    <div class="col-md-4 mb-4">
+                        <div class="contact-method-card">
+                            <div class="method-icon-wrapper">
+                                <div class="method-icon location-icon">
+                                    <i class="ti-location-pin"></i>
+                                </div>
+                            </div>
+                            <h4 class="method-title" data-i18n="contact.location">Location</h4>
+                            <p class="method-text" data-i18n="contact.locationValue">Yemen (Remote Work Available)</p>
+                            <p class="method-info">Timezone: GMT+3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Connect -->
+            <div class="social-connect">
+                <h3 class="social-title" data-i18n="contact.social">Connect on Social Media</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/hamza-saeed-8a44b7319/" target="_blank" rel="noopener noreferrer" class="social-link linkedin-link">
+                        <i class="ti-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/Hamza-Mughales" target="_blank" rel="noopener noreferrer" class="social-link github-link">
+                        <i class="ti-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://t.me/Hamza_Mughales" target="_blank" rel="noopener noreferrer" class="social-link telegram-link">
+                        <i class="ti-mobile"></i>
+                        <span>Telegram</span>
+                    </a>
+                </div>
+                
+                <div class="availability-status">
+                    <span class="status-indicator"></span>
+                    <span class="status-text" data-i18n="contact.available">Available for new projects</span>
                 </div>
             </div>
         </div>
@@ -451,7 +526,8 @@
         </footer>
     </div>
 
-    <script src="assets/js/lang.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- LeadMark js -->
+    <script src="assets/js/lang.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>

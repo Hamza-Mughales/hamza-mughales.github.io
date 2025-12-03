@@ -53,8 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', function() {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
             this.classList.toggle('is-active');
             navMenu.classList.toggle('show');
+            this.setAttribute('aria-expanded', !isExpanded);
         });
         
         // Close menu when clicking on a link
@@ -63,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', function() {
                 navToggle.classList.remove('is-active');
                 navMenu.classList.remove('show');
+                navToggle.setAttribute('aria-expanded', 'false');
             });
         });
     }
@@ -81,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Scroll animations
     const elementsToAnimate = document.querySelectorAll(
-        '.service-card, .portfolio-card, .blog-card, .skill-category, section'
+        '.portfolio-card, .blog-card, .skill-category, section'
     );
     elementsToAnimate.forEach(el => observer.observe(el));
     
