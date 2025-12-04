@@ -35,7 +35,6 @@ const translations = {
         // Portfolio Section
         'portfolio.subtitle': 'What I Did ?',
         'portfolio.title': 'Portfolio',
-        'portfolio.description': 'Explore my collection of projects showcasing expertise in web development, system design, and innovative solutions',
         'portfolio.school.title': 'School management system',
         'portfolio.school.desc': 'School management system. built with Laravel and Vuejs',
         'portfolio.lms1.title': 'Learning management system',
@@ -191,7 +190,6 @@ const translations = {
         // Portfolio Section
         'portfolio.subtitle': 'ماذا أنجزت؟',
         'portfolio.title': 'معرض الأعمال',
-        'portfolio.description': 'استكشف مجموعة مشاريعي التي تعرض الخبرة في تطوير الويب وتصميم الأنظمة والحلول المبتكرة',
         'portfolio.school.title': 'نظام إدارة مدرسية',
         'portfolio.school.desc': 'نظام إدارة مدرسية مبني باستخدام Laravel و Vuejs',
         'portfolio.lms1.title': 'نظام إدارة التعلم',
