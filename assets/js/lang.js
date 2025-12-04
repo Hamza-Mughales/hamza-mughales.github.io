@@ -35,6 +35,7 @@ const translations = {
         // Portfolio Section
         'portfolio.subtitle': 'What I Did ?',
         'portfolio.title': 'Portfolio',
+        'portfolio.description': 'Explore my collection of projects showcasing expertise in web development, system design, and innovative solutions',
         'portfolio.school.title': 'School management system',
         'portfolio.school.desc': 'School management system. built with Laravel and Vuejs',
         'portfolio.lms1.title': 'Learning management system',
@@ -75,7 +76,7 @@ const translations = {
         // NOOT Experience
         'exp.noot.title': 'Software Engineer',
         'exp.noot.company': 'NOOT | نوت',
-        'exp.noot.period': 'Full-time • Jan 2025 - Present',
+        'exp.noot.period': 'Nov 2024 - Present',
         'exp.noot.location': 'Remote • Saudi Arabia',
         'exp.noot.p1': 'Working as a Software Engineer at <strong>NOOT</strong>, a leading SaaS platform providing comprehensive business management solutions including HR management, financial accounting, POS systems, CRM, and inventory management for businesses across Saudi Arabia and the region.',
         'exp.noot.p2': 'Developing and maintaining core features of the platform using <strong>Laravel</strong> and <strong>Laravel Filament</strong>, building intuitive admin panels and management dashboards that serve thousands of businesses managing their daily operations efficiently.',
@@ -190,6 +191,7 @@ const translations = {
         // Portfolio Section
         'portfolio.subtitle': 'ماذا أنجزت؟',
         'portfolio.title': 'معرض الأعمال',
+        'portfolio.description': 'استكشف مجموعة مشاريعي التي تعرض الخبرة في تطوير الويب وتصميم الأنظمة والحلول المبتكرة',
         'portfolio.school.title': 'نظام إدارة مدرسية',
         'portfolio.school.desc': 'نظام إدارة مدرسية مبني باستخدام Laravel و Vuejs',
         'portfolio.lms1.title': 'نظام إدارة التعلم',
@@ -230,7 +232,7 @@ const translations = {
         // NOOT Experience
         'exp.noot.title': 'مهندس برمجيات',
         'exp.noot.company': 'NOOT | نوت',
-        'exp.noot.period': 'دوام كامل • يناير 2025 - حتى الآن',
+        'exp.noot.period': 'نوفمبر 2024 - حتى الآن',
         'exp.noot.location': 'عن بُعد • المملكة العربية السعودية',
         'exp.noot.p1': 'أعمل كمهندس برمجيات في <strong>نوت</strong>، منصة SaaS رائدة توفر حلول إدارة أعمال شاملة بما في ذلك إدارة الموارد البشرية والمحاسبة المالية وأنظمة نقاط البيع وإدارة علاقات العملاء وإدارة المخزون للشركات في جميع أنحاء المملكة العربية السعودية والمنطقة.',
         'exp.noot.p2': 'تطوير وصيانة الميزات الأساسية للمنصة باستخدام <strong>Laravel</strong> و <strong>Laravel Filament</strong>، وبناء لوحات إدارة بديهية ولوحات معلومات إدارية تخدم آلاف الشركات التي تدير عملياتها اليومية بكفاءة.',
