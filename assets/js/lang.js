@@ -23,6 +23,11 @@ const translations = {
         'about.p1': 'Experienced Software Engineer with over <strong>5 years of expertise</strong> in designing, developing, and deploying robust applications using <strong>Laravel, Vue.js, and modern web technologies</strong>. Skilled in creating scalable, efficient solutions tailored to business needs with a focus on <strong>performance, security, and user experience</strong>.',
         'about.p2': 'Successfully contributed to projects in diverse fields, including <strong>fintech, education, e-commerce, and enterprise resource planning (ERP)</strong>, delivering high-quality software solutions that drive tangible business results. Passionate about solving complex problems, adopting best practices, and thriving in collaborative environments as a Full-Stack Developer.',
         'about.downloadCV': 'Download CV',
+        'about.stats.experience': 'Years Experience',
+        'about.stats.projects': 'Projects Completed',
+        'about.highlights.fullstack': 'Full-Stack Development',
+        'about.highlights.modern': 'Modern Web Technologies',
+        'about.highlights.scalable': 'Scalable Solutions',
 
         // Skills Section
         'skills.subtitle': 'My Expertise',
@@ -178,6 +183,11 @@ const translations = {
         'about.p1': 'مهندس برمجيات ذو خبرة تزيد عن <strong>5 سنوات</strong> في تصميم وتطوير ونشر تطبيقات قوية باستخدام <strong>Laravel و Vue.js وتقنيات الويب الحديثة</strong>. ماهر في إنشاء حلول قابلة للتطوير وفعالة مصممة خصيصاً لتلبية احتياجات الأعمال مع التركيز على <strong>الأداء والأمان وتجربة المستخدم</strong>.',
         'about.p2': 'ساهمت بنجاح في مشاريع في مجالات متنوعة، بما في ذلك <strong>التكنولوجيا المالية والتعليم والتجارة الإلكترونية وتخطيط موارد المؤسسات (ERP)</strong>، وتقديم حلول برمجية عالية الجودة تحقق نتائج أعمال ملموسة. شغوف بحل المشكلات المعقدة واعتماد أفضل الممارسات والازدهار في البيئات التعاونية كمطور ويب متكامل.',
         'about.downloadCV': 'تحميل السيرة الذاتية',
+        'about.stats.experience': 'سنوات خبرة',
+        'about.stats.projects': 'مشروع مكتمل',
+        'about.highlights.fullstack': 'تطوير ويب متكامل',
+        'about.highlights.modern': 'تقنيات ويب حديثة',
+        'about.highlights.scalable': 'حلول قابلة للتطوير',
 
         // Skills Section
         'skills.subtitle': 'خبراتي',

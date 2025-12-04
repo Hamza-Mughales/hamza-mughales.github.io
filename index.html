@@ -87,23 +87,71 @@
         </div>
     </header>
 
-    <!-- About -->
-    <section class="section pt-0" id="about">
-        <div class="container text-center">
-            <div class="about">
-                <div class="img-wrapper">
-                    <img src="assets/imgs/mee.png" class="about-img" alt="Hamza Mughales" loading="lazy">
+    <!-- About Section - Modern Redesign -->
+    <section class="about-section section" id="about">
+        <!-- Animated Background Decoration -->
+        <div class="about-bg-decoration"></div>
+        
+        <div class="container">
+            <!-- About Header -->
+            <div class="about-header text-center">
+                <div class="about-badge">
+                    <span class="badge-icon">👨‍💻</span>
+                    <span data-i18n="about.subtitle">Who Am I ?</span>
                 </div>
-                <div class="about-caption">
-                    <p class="section-subtitle" data-i18n="about.subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3" data-i18n="about.title">About Me</h2>
-                    <p class="about-p" data-i18n="about.p1">
+                <h2 class="about-title" data-i18n="about.title">About Me</h2>
+            </div>
+
+            <!-- About Content -->
+            <div class="about-content-wrapper">
+                <!-- Profile Image Card -->
+                <div class="about-image-card">
+                    <div class="image-glow-wrapper">
+                        <img src="assets/imgs/mee.png" class="about-profile-img" alt="Hamza Mughales" loading="lazy">
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">5+</div>
+                            <div class="stat-label" data-i18n="about.stats.experience">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">50+</div>
+                            <div class="stat-label" data-i18n="about.stats.projects">Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Text Content -->
+                <div class="about-text-card">
+                    <p class="about-description" data-i18n="about.p1">
                         Experienced Software Engineer with over <strong>5 years of expertise</strong> in designing, developing, and deploying robust applications using <strong>Laravel, Vue.js, and modern web technologies</strong>. Skilled in creating scalable, efficient solutions tailored to business needs with a focus on <strong>performance, security, and user experience</strong>.
                     </p>
-                    <p class="about-p mt-3" data-i18n="about.p2">
+                    <p class="about-description" data-i18n="about.p2">
                         Successfully contributed to projects in diverse fields, including <strong>fintech, education, e-commerce, and enterprise resource planning (ERP)</strong>, delivering high-quality software solutions that drive tangible business results.
                     </p>
-                    <button id="download-cv" class="btn btn-outline-primary btn-rounded mt-4 px-5 py-2" data-i18n="about.downloadCV">Download CV</button>
+                    
+                    <!-- Highlights -->
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="ti-server"></i>
+                            <span data-i18n="about.highlights.fullstack">Full-Stack Development</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="ti-layout"></i>
+                            <span data-i18n="about.highlights.modern">Modern Web Technologies</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="ti-database"></i>
+                            <span data-i18n="about.highlights.scalable">Scalable Solutions</span>
+                        </div>
+                    </div>
+
+                    <button id="download-cv" class="btn-about-download" data-i18n="about.downloadCV">
+                        <span>Download CV</span>
+                        <i class="ti-download"></i>
+                    </button>
                 </div>
             </div>
         </div>
