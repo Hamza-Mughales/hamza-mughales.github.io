@@ -109,49 +109,75 @@
         </div>
     </section>
 
-    <!-- Skills -->
-    <section class="section bg-light" id="skills">
-        <div class="container text-center">
-            <p class="section-subtitle" data-i18n="skills.subtitle">My Expertise</p>
-            <h6 class="section-title mb-6" data-i18n="skills.title">Technical Skills</h6>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="skill-category">
-                        <h5><i class="ti-server"></i> <span data-i18n="skills.backend">Backend Development</span></h5>
-                        <div class="skill-tags">
-                            <span class="badge">PHP</span>
-                            <span class="badge">Laravel</span>
-                            <span class="badge">CodeIgniter</span>
-                            <span class="badge">RESTful APIs</span>
-                            <span class="badge">Microservices</span>
-                            <span class="badge">gRPC</span>
+    <!-- Skills Section - Modern Redesign -->
+    <section class="skills-section section" id="skills">
+        <!-- Animated Background Decoration -->
+        <div class="skills-bg-decoration"></div>
+        
+        <div class="container">
+            <!-- Skills Header -->
+            <div class="skills-header text-center">
+                <div class="skills-badge">
+                    <span class="badge-icon">⚡</span>
+                    <span data-i18n="skills.subtitle">My Expertise</span>
+                </div>
+                <h2 class="skills-title" data-i18n="skills.title">Technical Skills</h2>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="skills-grid">
+                <!-- Backend Development -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <div class="skill-icon">
+                            <i class="ti-server"></i>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="skill-category">
-                        <h5><i class="ti-layout"></i> <span data-i18n="skills.frontend">Frontend Development</span></h5>
-                        <div class="skill-tags">
-                            <span class="badge">Vue.js</span>
-                            <span class="badge">JavaScript</span>
-                            <span class="badge">jQuery</span>
-                            <span class="badge">HTML5/CSS3</span>
-                            <span class="badge">Bootstrap</span>
-                            <span class="badge">Tailwind CSS</span>
-                        </div>
+                    <h3 class="skill-category-title" data-i18n="skills.backend">Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-badge">PHP</span>
+                        <span class="skill-badge">Laravel</span>
+                        <span class="skill-badge">Filament</span>
+                        <span class="skill-badge">CodeIgniter</span>
+                        <span class="skill-badge">RESTful APIs</span>
+                        <span class="skill-badge">Microservices</span>
+                        <span class="skill-badge">gRPC</span>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="skill-category">
-                        <h5><i class="ti-database"></i> <span data-i18n="skills.database">Database & Tools</span></h5>
-                        <div class="skill-tags">
-                            <span class="badge">MySQL</span>
-                            <span class="badge">Git/GitHub</span>
-                            <span class="badge">Laravel Filament</span>
-                            <span class="badge">Forge</span>
-                            <span class="badge">API Integration</span>
-                            <span class="badge">Payment Gateways</span>
+
+                <!-- Frontend Development -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <div class="skill-icon">
+                            <i class="ti-layout"></i>
                         </div>
+                    </div>
+                    <h3 class="skill-category-title" data-i18n="skills.frontend">Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-badge">Vue.js</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">jQuery</span>
+                        <span class="skill-badge">HTML5/CSS3</span>
+                        <span class="skill-badge">Bootstrap</span>
+                        <span class="skill-badge">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Database & Tools -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <div class="skill-icon">
+                            <i class="ti-database"></i>
+                        </div>
+                    </div>
+                    <h3 class="skill-category-title" data-i18n="skills.database">Database & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">Git/GitHub</span>
+                        <span class="skill-badge">Laravel Filament</span>
+                        <span class="skill-badge">Forge</span>
+                        <span class="skill-badge">API Integration</span>
+                        <span class="skill-badge">Payment Gateways</span>
                     </div>
                 </div>
             </div>
