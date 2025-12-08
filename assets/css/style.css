@@ -125,29 +125,8 @@ a {
     padding: 0 15px;
 }
 
-.col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 15px;
-}
-
-.col-lg-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-    padding: 0 15px;
-}
-
-.col-lg-4 {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-    padding: 0 15px;
-}
-
 @media (max-width: 768px) {
-    .col-md-4,
-    .col-md-6,
-    .col-lg-3,
-    .col-lg-4 {
+    .col-md-4 {
         flex: 0 0 100%;
         max-width: 100%;
         margin-bottom: 30px;
@@ -560,50 +539,14 @@ a {
     box-shadow: 0 15px 40px rgba(255, 255, 255, 0.1);
 }
 
-.btn-outline-primary {
-    border: 2px solid var(--primary);
-    color: var(--primary);
-    background: transparent;
-}
-
-.btn-outline-primary:hover {
-    background: var(--primary);
-    color: #fff;
-}
-
-.btn-rounded {
-    border-radius: 50px;
-}
-
 /* Sections */
 .section {
     padding: 70px 10px;
 }
 
-.section.bg-light {
-    background: #f8f9fa;
-}
-
-.section.bg-primary {
-    background: var(--primary);
-    color: #fff;
-}
-
 .bg-primary {
     background: var(--primary) !important;
     color: #fff !important;
-}
-
-.section.pt-0 {
-    padding-top: 0;
-}
-
-.section.pb-0 {
-    padding-bottom: 0;
-}
-
-.section-sm {
-    padding: 40px 0 !important;
 }
 
 .text-center {
@@ -688,52 +631,6 @@ a {
 .py-3 {
     padding-top: 1rem;
     padding-bottom: 1rem;
-}
-
-/* About */
-.about {
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-
-.about-img-holder {
-    min-width: 400px;
-    max-width: 400px;
-    margin-right: 20px;
-}
-
-.about-img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.about-img:hover {
-    transform: scale(1.05);
-}
-
-.about-caption {
-    flex: 1;
-}
-
-.about-p {
-    line-height: 1.8;
-    color: #495057;
-    margin-bottom: 1.2rem;
-}
-
-@media (max-width: 768px) {
-    .about {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .about-img-holder {
-        max-width: 220px;
-        min-width: 100%;
-        margin: 0 auto 20px;
-    }
 }
 
 /* ============================================
@@ -1160,52 +1057,6 @@ a {
     }
 }
 
-/* Skills */
-.skill-category {
-    padding: 2.5rem;
-    border-radius: 20px;
-    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    transition: all 0.4s;
-    height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.skill-category:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 15px 35px rgba(99, 102, 241, 0.15);
-    border-color: rgba(99, 102, 241, 0.2);
-}
-
-.skill-category h5 {
-    color: var(--dark);
-    font-weight: 700;
-    margin-bottom: 1.8rem;
-    font-size: 1.3rem;
-}
-
-.skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.7rem;
-}
-
-.badge {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    border-radius: 25px;
-    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-    color: #fff;
-    box-shadow: 0 3px 10px rgba(99, 102, 241, 0.3);
-    transition: all 0.3s;
-    display: inline-block;
-}
-
-.badge:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
-}
 
 /* ============================================
    SKILLS SECTION - MODERN REDESIGN
@@ -1487,68 +1338,6 @@ a {
 
 
 
-
-/* Portfolio */
-.portfolio-card {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    transition: all 0.4s;
-    margin-bottom: 30px;
-}
-
-.portfolio-card:hover {
-    transform: translateY(-12px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.25);
-}
-
-.portfolio-card-img {
-    height: 280px;
-    object-fit: cover;
-    width: 100%;
-    transition: transform 0.6s;
-}
-
-.portfolio-card:hover .portfolio-card-img {
-    transform: scale(1.08);
-}
-
-.portfolio-card-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    visibility: hidden;
-    opacity: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.3) 100%);
-    transition: all 0.4s;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    overflow: hidden;
-    color: #fff;
-}
-
-.portfolio-card:hover .portfolio-card-overlay {
-    opacity: 1;
-    visibility: visible;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-}
-
-.portfolio-card-caption {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    padding: 20px;
-}
 
 /* ============================================
    PORTFOLIO SECTION - MODERN REDESIGN
@@ -1855,83 +1644,6 @@ a {
 
     .project-title {
         font-size: 1.2rem;
-    }
-}
-
-
-/* Blog/Experience Cards */
-.blog-card {
-    display: flex;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    margin-bottom: 2.5rem;
-    transition: all 0.4s;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    background: #fff;
-}
-
-.blog-card:hover {
-    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
-    transform: translateY(-8px);
-    border-color: rgba(102, 126, 234, 0.2);
-}
-
-.blog-card-header {
-    min-width: 350px;
-    max-width: 350px;
-    height: 220px;
-    overflow: hidden;
-}
-
-.blog-card-img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    transition: transform 0.6s;
-}
-
-.blog-card-img.logo-contain {
-    object-fit: contain;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    padding: 1.5rem;
-}
-
-.blog-card:hover .blog-card-img {
-    transform: scale(1.08);
-}
-
-.blog-card-body {
-    padding: 2.5rem;
-    flex: 1;
-}
-
-.blog-card-title {
-    font-weight: 100;
-    margin-bottom: 1rem;
-}
-
-.blog-card-caption {
-    margin: 15px 0 !important;
-    font-size: 0.95rem;
-}
-
-.blog-card-body p {
-    margin-bottom: 1.2rem;
-    line-height: 1.8;
-    color: #495057;
-}
-
-@media (max-width: 992px) {
-    .blog-card {
-        flex-direction: column;
-    }
-    
-    .blog-card-header {
-        width: 100%;
-        max-width: 100%;
-        min-width: 100%;
-        height: 180px;
     }
 }
 
@@ -2249,38 +1961,6 @@ a {
     }
 }
 
-/* Contact */
-.list-inline {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0;
-    list-style: none;
-}
-
-.list-inline-item i {
-    font-size: 32px;
-    transition: all 0.3s;
-    color: var(--dark);
-}
-
-.list-inline-item a:hover i {
-    transform: scale(1.2) rotate(5deg);
-    color: var(--primary);
-}
-
-.font-italic {
-    font-style: italic;
-}
-
-.text-dark {
-    color: #333;
-}
-
-.text-muted {
-    color: #6c757d;
-}
-
 /* Footer */
 .footer {
     display: flex;
@@ -2501,39 +2181,7 @@ body.rtl strong {
     animation: fadeInUp 0.6s ease-out forwards;
 }
 
-/* Accessibility Improvements */
-/* Skip Link */
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: var(--primary);
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    z-index: 10000;
-    border-radius: 0 0 8px 0;
-    font-weight: 600;
-}
-
-.skip-link:focus {
-    top: 0;
-    outline: 3px solid #fff;
-    outline-offset: 2px;
-}
-
-/* Screen Reader Only */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-}
+/* Accessibility - Focus Indicators */
 
 /* Focus Indicators */
 *:focus {

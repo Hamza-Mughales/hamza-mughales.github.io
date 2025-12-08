@@ -83,9 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // Scroll animations
-    const elementsToAnimate = document.querySelectorAll(
-        '.portfolio-card, .blog-card, .skill-category, section'
-    );
+    const elementsToAnimate = document.querySelectorAll('section');
     elementsToAnimate.forEach(el => observer.observe(el));
     
     // Add fade-in class to body
@@ -93,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Active nav link highlighting on scroll
     const sections = document.querySelectorAll('section[id]');
-    const navLinksAll = document.querySelectorAll('.navbar .nav .link');
+    const navLinksAll = document.querySelectorAll('.custom-navbar .nav .link');
     
     function highlightNavigation() {
         const scrollY = window.pageYOffset;
@@ -115,24 +113,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     window.addEventListener('scroll', highlightNavigation);
-    
-    // Add typing effect to header subtitle (optional enhancement)
-    const headerTagline = document.querySelector('.header-tagline');
-    if (headerTagline) {
-        const text = headerTagline.textContent;
-        headerTagline.textContent = '';
-        headerTagline.style.opacity = '1';
-        let i = 0;
-        
-        setTimeout(() => {
-            const typeWriter = () => {
-                if (i < text.length) {
-                    headerTagline.textContent += text.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, 50);
-                }
-            };
-            typeWriter();
-        }, 1000);
-    }
 });
