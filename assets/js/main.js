@@ -2,7 +2,7 @@
 function downloadPDF() {
     const fileName = 'Hamza Mughales CV';
     const link = document.createElement('a');
-    link.href = 'assets/cv/Hamza Mughales CV.pdf';
+    link.href = 'assets/cv/Hamza Mughales.pdf';
     link.download = fileName;
     link.target = '_blank';
     link.click();
