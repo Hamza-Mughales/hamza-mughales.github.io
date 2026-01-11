@@ -431,20 +431,32 @@ a {
     text-shadow: 0 0 80px rgba(167, 139, 250, 0.5);
 }
 
+
+/* Main Title (Professional Title) */
+.header-main-title {
+    font-size: 2.2rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 1rem !important;
+    color: #fff;
+    animation: fadeInUp 0.8s ease-out 0.3s backwards;
+    text-transform: uppercase;
+}
+
 /* Subtitle */
 .header-subtitle {
-    font-size: 1.3rem !important;
-    font-weight: 600 !important;
-    letter-spacing: 2px !important;
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 1px !important;
     margin-bottom: 2.5rem !important;
-    color: rgba(255, 255, 255, 0.85);
-    animation: fadeInUp 0.8s ease-out 0.4s backwards;
+    color: rgba(255, 255, 255, 0.75);
+    animation: fadeInUp 0.8s ease-out 0.5s backwards;
     position: relative;
     display: inline-block;
-    padding: 0.8rem 2rem;
-    background: rgba(99, 102, 241, 0.1);
+    padding: 0.7rem 1.8rem;
+    background: rgba(99, 102, 241, 0.08);
     border-radius: 50px;
-    border: 1px solid rgba(99, 102, 241, 0.2);
+    border: 1px solid rgba(99, 102, 241, 0.15);
 }
 
 /* Buttons Container */

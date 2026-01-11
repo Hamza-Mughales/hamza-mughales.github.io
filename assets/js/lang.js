@@ -12,7 +12,8 @@ const translations = {
         // Header
         'header.greeting': "Hello, I'm",
         'header.name': 'Hamza Mughales',
-        'header.title': 'Software Engineer | FULL-STACK DEVELOPER',
+        'header.title': 'Senior Software Engineer',
+        'header.subtitle': 'Full-Stack Developer with Strong Backend Expertise (Laravel & Vue.js)',
         'header.tagline': 'Transforming ideas into scalable, high-performance web solutions',
         'header.viewWork': 'View My Work',
         'header.contactMe': 'Contact Me',
@@ -20,8 +21,8 @@ const translations = {
         // About Section
         'about.subtitle': 'Who Am I ?',
         'about.title': 'About Me',
-        'about.p1': 'Experienced Software Engineer with over <strong>5 years of expertise</strong> in designing, developing, and deploying robust applications using <strong>Laravel, Vue.js, and modern web technologies</strong>. Skilled in creating scalable, efficient solutions tailored to business needs with a focus on <strong>performance, security, and user experience</strong>.',
-        'about.p2': 'Successfully contributed to projects in diverse fields, including <strong>fintech, education, e-commerce, and enterprise resource planning (ERP)</strong>, delivering high-quality software solutions that drive tangible business results. Passionate about solving complex problems, adopting best practices, and thriving in collaborative environments as a Full-Stack Developer.',
+        'about.p1': 'Experienced <strong>Senior Software Engineer</strong> with over <strong>6 years of expertise</strong> in designing, developing, and deploying robust backend systems and scalable applications using <strong>PHP, Laravel, Vue.js, and modern web technologies</strong>. Skilled in creating efficient, maintainable solutions tailored to business needs with a focus on <strong>performance, security, and user experience</strong>.',
+        'about.p2': 'Successfully contributed to projects across diverse domains, including <strong>fintech, education, e-commerce, and enterprise resource planning (ERP)</strong>, delivering high-quality software solutions relied upon by hundreds of thousands of users. Passionate about solving complex problems, following best practices, and thriving in collaborative environments as a Backend-Focused Full-Stack Developer.',
         'about.downloadCV': 'Download CV',
         'about.stats.experience': 'Years Experience',
         'about.stats.projects': 'Projects Completed',
@@ -172,16 +173,17 @@ const translations = {
         // Header
         'header.greeting': 'مرحباً، أنا',
         'header.name': 'حمزة المغلس',
-        'header.title': 'مهندس برمجيات | مطور ويب متكامل',
+        'header.title': 'مهندس برمجيات أول',
+        'header.subtitle': 'مطور ويب متكامل مع خبرة قوية في الواجهة الخلفية (Laravel & Vue.js)',
         'header.tagline': 'تحويل الأفكار إلى حلول ويب قابلة للتطوير وعالية الأداء',
         'header.viewWork': 'شاهد أعمالي',
         'header.contactMe': 'تواصل معي',
 
         // About Section
         'about.subtitle': 'من أنا؟',
-        'about.title': 'نبذة عني',
-        'about.p1': 'مهندس برمجيات ذو خبرة تزيد عن <strong>5 سنوات</strong> في تصميم وتطوير ونشر تطبيقات قوية باستخدام <strong>Laravel و Vue.js وتقنيات الويب الحديثة</strong>. ماهر في إنشاء حلول قابلة للتطوير وفعالة مصممة خصيصاً لتلبية احتياجات الأعمال مع التركيز على <strong>الأداء والأمان وتجربة المستخدم</strong>.',
-        'about.p2': 'ساهمت بنجاح في مشاريع في مجالات متنوعة، بما في ذلك <strong>التكنولوجيا المالية والتعليم والتجارة الإلكترونية وتخطيط موارد المؤسسات (ERP)</strong>، وتقديم حلول برمجية عالية الجودة تحقق نتائج أعمال ملموسة. شغوف بحل المشكلات المعقدة واعتماد أفضل الممارسات والازدهار في البيئات التعاونية كمطور ويب متكامل.',
+
+        'about.p1': 'مهندس برمجيات أول ذو خبرة تزيد عن <strong>6 سنوات</strong> في تصميم وتطوير ونشر أنظمة خلفية قوية وتطبيقات قابلة للتوسع باستخدام <strong>PHP وLaravel وVue.js وتقنيات الويب الحديثة</strong>. ماهر في إنشاء حلول فعالة وسهلة الصيانة مصممة خصيصاً لتلبية احتياجات الأعمال مع التركيز على <strong>الأداء والأمان وتجربة المستخدم</strong>.',
+        'about.p2': 'ساهمت بنجاح في مشاريع في مجالات متنوعة، بما في ذلك <strong>التكنولوجيا المالية والتعليم والتجارة الإلكترونية وتخطيط موارد المؤسسات (ERP)</strong>، مقدماً حلول برمجية عالية الجودة يعتمد عليها مئات الآلاف من المستخدمين. شغوف بحل المشكلات المعقدة، واتباع أفضل الممارسات، والازدهار في البيئات التعاونية كمطور ويب متكامل مع تركيز على Backend.',
         'about.downloadCV': 'تحميل السيرة الذاتية',
         'about.stats.experience': 'سنوات خبرة',
         'about.stats.projects': 'مشروع مكتمل',
