@@ -2103,9 +2103,17 @@ body.rtl strong {
         font-size: 2.8rem;
     }
     
+    .header-main-title {
+        font-size: 1.5rem !important;
+        letter-spacing: 0.5px !important;
+        padding: 0 10px;
+    }
+    
     .header-subtitle {
-        font-size: 1rem !important;
-        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem !important;
+        padding: 0.5rem 1rem;
+        letter-spacing: 0.5px !important;
+        line-height: 1.4;
     }
     
     .header-buttons {
@@ -2126,7 +2134,22 @@ body.rtl strong {
     }
     
     .header-title .down {
-        font-size: 2.2rem;
+        font-size: 2rem;
+    }
+    
+    .header-main-title {
+        font-size: 1.2rem !important;
+        letter-spacing: 0.3px !important;
+        margin-bottom: 0.8rem !important;
+    }
+    
+    .header-subtitle {
+        font-size: 0.8rem !important;
+        padding: 0.5rem 0.8rem;
+        letter-spacing: 0.3px !important;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .section-title {
