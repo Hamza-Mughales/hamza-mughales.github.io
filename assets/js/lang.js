@@ -12,8 +12,8 @@ const translations = {
         // Header
         'header.greeting': "Hello, I'm",
         'header.name': 'Hamza Mughales',
-        'header.title': 'Senior Software Engineer',
-        'header.subtitle': 'Full-Stack Developer with Strong Backend Expertise (Laravel & Vue.js)',
+        'header.title': 'Senior PHP/Laravel Software Engineer',
+        'header.subtitle': 'Backend-Focused Full-Stack Developer | Laravel & Vue.js',
         'header.tagline': 'Transforming ideas into scalable, high-performance web solutions',
         'header.viewWork': 'View My Work',
         'header.contactMe': 'Contact Me',
@@ -21,8 +21,8 @@ const translations = {
         // About Section
         'about.subtitle': 'Who Am I ?',
         'about.title': 'About Me',
-        'about.p1': 'Experienced <strong>Senior Software Engineer</strong> with over <strong>6 years of expertise</strong> in designing, developing, and deploying robust backend systems and scalable applications using <strong>PHP, Laravel, Vue.js, and modern web technologies</strong>. Skilled in creating efficient, maintainable solutions tailored to business needs with a focus on <strong>performance, security, and user experience</strong>.',
-        'about.p2': 'Successfully contributed to projects across diverse domains, including <strong>fintech, education, e-commerce, and enterprise resource planning (ERP)</strong>, delivering high-quality software solutions relied upon by hundreds of thousands of users. Passionate about solving complex problems, following best practices, and thriving in collaborative environments as a Backend-Focused Full-Stack Developer.',
+        'about.p1': 'Senior Software Engineer with <strong>6+ years of experience</strong> building scalable web applications using <strong>Laravel, PHP, and Vue.js</strong>. Experienced in designing enterprise systems, RESTful APIs, and modern business platforms.',
+        'about.p2': 'Worked across <strong>fintech, ERP, education, HR, accounting, and project management</strong> domains. Passionate about clean architecture, maintainable code, performance optimization, and delivering reliable production-ready software.',
         'about.downloadCV': 'Download CV',
         'about.stats.experience': 'Years Experience',
         'about.stats.projects': 'Projects Completed',
@@ -78,62 +78,45 @@ const translations = {
         'experience.subtitle': 'Where Have I Worked?',
         'experience.title': 'Professional Experience',
 
+        // Elevenz Experience
+        'exp.elevenz.title': 'Software Engineer',
+        'exp.elevenz.company': 'Elevenz Company',
+        'exp.elevenz.period': 'Feb 2026 - Present',
+        'exp.elevenz.p1': 'Developing and maintaining enterprise web applications using <strong>Laravel</strong> and <strong>Vue.js</strong>.',
+        'exp.elevenz.p2': 'Building and enhancing a <strong>Design & Finishing Project Management Platform</strong>, enabling project planning, task tracking, budgeting, document management, and collaboration between stakeholders.',
+        'exp.elevenz.p3': 'Designing scalable backend services and RESTful APIs while improving application performance and maintainability.',
+
         // NOOT Experience
         'exp.noot.title': 'Software Engineer',
         'exp.noot.company': 'NOOT | نوت',
-        'exp.noot.period': 'Nov 2024 - Present',
+        'exp.noot.period': 'Nov 2024 - Jan 2026',
         'exp.noot.location': 'Remote • Saudi Arabia',
-        'exp.noot.p1': 'Working as a Software Engineer at <strong>NOOT</strong>, a leading SaaS platform providing comprehensive business management solutions including HR management, financial accounting, POS systems, CRM, and inventory management for businesses across Saudi Arabia and the region.',
-        'exp.noot.p2': 'Developing and maintaining core features of the platform using <strong>Laravel</strong> and <strong>Laravel Filament</strong>, building intuitive admin panels and management dashboards that serve thousands of businesses managing their daily operations efficiently.',
-        'exp.noot.p3': 'Implementing <strong>RESTful APIs</strong> and backend services for multiple integrated modules including HR systems, financial accounting, inventory tracking, and CRM functionalities, ensuring seamless data flow and system integration across the platform.',
-        'exp.noot.p4': 'Contributing to system architecture decisions, optimizing database queries for performance at scale, and implementing security best practices to protect sensitive business and financial data.',
-        'exp.noot.p5': 'Collaborating with product managers and cross-functional teams in an agile environment to deliver new features, enhance user experience, and maintain high code quality standards through code reviews and automated testing.',
-
-        // Freelance Experience
-        'exp.freelance.title': 'Software Engineer',
-        'exp.freelance.company': 'Freelance',
-        'exp.freelance.period': 'Aug 2019 - Present',
-        'exp.freelance.p1': 'Delivered custom web solutions for clients across various industries, focusing on developing efficient, user-friendly, and scalable applications.',
-        'exp.freelance.p2': 'Worked on diverse projects, including e-commerce platforms, management systems, and dynamic reporting tools, leveraging technologies like <strong>Laravel, Vue.js, Bootstrap, Tailwind CSS, JavaScript, jQuery, MySQL</strong>.',
-        'exp.freelance.p3': 'Provided end-to-end development services, including requirement analysis, design, development, testing, and deployment.',
-        'exp.freelance.p4': 'Specialized in enhancing existing systems, optimizing performance, fixing bugs, and integrating third-party APIs to meet unique business needs.',
-        'exp.freelance.p5': 'Built strong client relationships through effective communication, on-time delivery, and delivering high-quality results.',
+        'exp.noot.p1': 'Developed and maintained core features for a <strong>multi-tenant SaaS ERP platform</strong> serving businesses across Saudi Arabia.',
+        'exp.noot.p2': 'Built scalable backend systems, business workflows, and admin dashboards using <strong>Laravel</strong> and <strong>Laravel Filament</strong>. Designed and maintained secure RESTful APIs for HR, accounting, CRM, inventory, and POS modules.',
+        'exp.noot.p3': 'Improved application performance through database optimization, queue management, caching, and clean architecture practices while collaborating in an Agile environment.',
 
         // Wings Experience
         'exp.wings.title': 'Software Engineer',
         'exp.wings.company': 'Wings Company',
         'exp.wings.period': 'Dec 2023 - Aug 2024',
         'exp.wings.p1': 'Improved and maintained an existing <strong>School Management System (SMS)</strong> built with Laravel and Vue.js, optimizing code quality, fixing runtime issues, enhancing database queries, and restructuring tables for better performance as the dataset scaled. Developed and refined APIs to support mobile application integration.',
-        'exp.wings.p2': 'Contributed to a <strong>Learning Management System (LMS)</strong> project built with Laravel and Tailwind, adding new features to enhance functionality. Successfully integrated CodePay as a payment method, enabling organizations to generate and sell unique codes that users can redeem to purchase courses.',
-        'exp.wings.p3': 'Focused on delivering high-performing, scalable solutions while ensuring code maintainability and system efficiency.',
-
-        // KitSys Experience
-        'exp.kitsys.title': 'Software Engineer',
-        'exp.kitsys.company': 'KitSys Company',
-        'exp.kitsys.period': 'Jun 2023 - Nov 2023',
-        'exp.kitsys.p1': 'Developed and maintained APIs for a <strong>School Management System (SMS)</strong> using Laravel, handling core functionalities such as managing students, teachers, and subjects. Implemented a microservices architecture where services communicated seamlessly via gRPC.',
-        'exp.kitsys.p2': 'Built an <strong>e-commerce project dashboard</strong> using Laravel Filament, enabling efficient management of the platform. Designed and deployed APIs to support integration with a mobile application, ensuring smooth user experiences across devices.',
-        'exp.kitsys.p3': 'Focused on delivering scalable, robust, and maintainable backend solutions while collaborating closely with frontend and mobile teams to ensure successful project outcomes.',
+        'exp.wings.p2': 'Contributed to a <strong>Learning Management System (LMS)</strong> built with Laravel and Tailwind, adding new features and integrating <strong>CodePay</strong> as a payment method, enabling organizations to generate and sell unique codes that users can redeem to purchase courses.',
 
         // Smart Life Experience
-        'exp.smartlife.title': 'Full-Stack Developer',
+        'exp.smartlife.title': 'Full Stack Developer',
         'exp.smartlife.company': 'Smart Life Company',
         'exp.smartlife.period': 'Jul 2022 - May 2023',
         'exp.smartlife.p1': 'Enhanced and maintained an existing ERP system built with the PHP CodeIgniter framework, resolving bugs, optimizing performance, and improving code quality for better maintainability and efficiency.',
-        'exp.smartlife.p2': 'Developed a <strong>smart dynamic reporting feature</strong>, empowering customers to generate custom reports tailored to their specific needs, improving data accessibility and decision-making capabilities.',
-        'exp.smartlife.p3': 'Designed and implemented a <strong>documentary system</strong> using Laravel, centralizing and organizing company system documents for streamlined access and management.',
-        'exp.smartlife.p4': 'Collaborated with stakeholders to identify improvement opportunities, implement new features, and ensure the ERP system met evolving business requirements.',
-        'exp.smartlife.p5': 'Focused on delivering high-quality solutions that enhanced system usability and customer satisfaction.',
+        'exp.smartlife.p2': 'Developed a <strong>smart dynamic reporting feature</strong>, empowering customers to generate custom reports tailored to their specific needs. Designed and implemented a <strong>documentary system</strong> using Laravel, centralizing and organizing company system documents.',
+        'exp.smartlife.p3': 'Built an <strong>e-commerce project dashboard</strong> using Laravel Filament, enabling efficient management of the platform. Designed and deployed APIs to support integration with a mobile application.',
 
         // Ysys Experience
         'exp.ysys.title': 'Full-Stack Developer',
         'exp.ysys.company': 'Ysys Company',
         'exp.ysys.period': 'Jun 2021 - May 2022',
         'exp.ysys.p1': 'Designed and developed scalable web applications, with a focus on both server-side logic and client-side components.',
-        'exp.ysys.p2': 'Contributed significantly to Floosak, a <strong>finance wallet</strong> built with Laravel, handling various aspects including report generation, problem-solving, feature implementation, and integration with third-party providers to enhance functionality.',
-        'exp.ysys.p3': 'Integrated <strong>third-party APIs</strong> and services to expand application capabilities and ensure seamless interoperability.',
-        'exp.ysys.p4': 'Managed and maintained various server environments, including hosting solutions, database management systems, and cloud infrastructure (e.g., <strong>Forge</strong>, Namecheap), ensuring optimal performance and reliability.',
-        'exp.ysys.p5': 'Collaborated with team members to support development efforts, ensuring smooth integration of code and overall project success.',
+        'exp.ysys.p2': 'Contributed significantly to Floosak, a <strong>finance wallet</strong> built with Laravel, handling report generation, problem-solving, feature implementation, and integration with third-party providers to enhance functionality.',
+        'exp.ysys.p3': 'Integrated <strong>third-party APIs</strong> and services to expand application capabilities. Managed server environments including hosting solutions, database management, and cloud infrastructure (<strong>Forge</strong>, Namecheap).',
 
         // Education Section
         'education.subtitle': 'Academic Background',
@@ -173,8 +156,8 @@ const translations = {
         // Header
         'header.greeting': 'مرحباً، أنا',
         'header.name': 'حمزة المغلس',
-        'header.title': 'مهندس برمجيات أول',
-        'header.subtitle': 'مطور ويب متكامل مع خبرة قوية في الواجهة الخلفية (Laravel & Vue.js)',
+        'header.title': 'مهندس برمجيات أول PHP/Laravel',
+        'header.subtitle': 'مطور ويب متكامل مع تركيز على الواجهة الخلفية | Laravel & Vue.js',
         'header.tagline': 'تحويل الأفكار إلى حلول ويب قابلة للتطوير وعالية الأداء',
         'header.viewWork': 'شاهد أعمالي',
         'header.contactMe': 'تواصل معي',
@@ -182,8 +165,8 @@ const translations = {
         // About Section
         'about.subtitle': 'من أنا؟',
 
-        'about.p1': 'مهندس برمجيات أول ذو خبرة تزيد عن <strong>6 سنوات</strong> في تصميم وتطوير ونشر أنظمة خلفية قوية وتطبيقات قابلة للتوسع باستخدام <strong>PHP وLaravel وVue.js وتقنيات الويب الحديثة</strong>. ماهر في إنشاء حلول فعالة وسهلة الصيانة مصممة خصيصاً لتلبية احتياجات الأعمال مع التركيز على <strong>الأداء والأمان وتجربة المستخدم</strong>.',
-        'about.p2': 'ساهمت بنجاح في مشاريع في مجالات متنوعة، بما في ذلك <strong>التكنولوجيا المالية والتعليم والتجارة الإلكترونية وتخطيط موارد المؤسسات (ERP)</strong>، مقدماً حلول برمجية عالية الجودة يعتمد عليها مئات الآلاف من المستخدمين. شغوف بحل المشكلات المعقدة، واتباع أفضل الممارسات، والازدهار في البيئات التعاونية كمطور ويب متكامل مع تركيز على Backend.',
+        'about.p1': 'مهندس برمجيات أول بخبرة تزيد عن <strong>6 سنوات</strong> في بناء تطبيقات ويب قابلة للتوسع باستخدام <strong>Laravel وPHP وVue.js</strong>. خبرة في تصميم الأنظمة المؤسسية وواجهات RESTful API والمنصات التجارية الحديثة.',
+        'about.p2': 'عملت في مجالات <strong>التكنولوجيا المالية وERP والتعليم والموارد البشرية والمحاسبة وإدارة المشاريع</strong>. شغوف بالهندسة النظيفة والكود القابل للصيانة وتحسين الأداء وتقديم برمجيات جاهزة للإنتاج.',
         'about.downloadCV': 'تحميل السيرة الذاتية',
         'about.stats.experience': 'سنوات خبرة',
         'about.stats.projects': 'مشروع مكتمل',
@@ -239,62 +222,45 @@ const translations = {
         'experience.subtitle': 'أين عملت؟',
         'experience.title': 'الخبرات المهنية',
 
+        // Elevenz Experience
+        'exp.elevenz.title': 'مهندس برمجيات',
+        'exp.elevenz.company': 'شركة Elevenz',
+        'exp.elevenz.period': 'فبراير 2026 - حتى الآن',
+        'exp.elevenz.p1': 'تطوير وصيانة تطبيقات ويب مؤسسية باستخدام <strong>Laravel</strong> و <strong>Vue.js</strong>.',
+        'exp.elevenz.p2': 'بناء وتطوير <strong>منصة إدارة مشاريع التصميم والتشطيبات</strong>، تمكّن من تخطيط المشاريع وتتبع المهام وإدارة الميزانيات والمستندات والتعاون بين أصحاب المصلحة.',
+        'exp.elevenz.p3': 'تصميم خدمات خلفية قابلة للتوسع وواجهات RESTful API مع تحسين أداء التطبيق وقابلية صيانته.',
+
         // NOOT Experience
         'exp.noot.title': 'مهندس برمجيات',
         'exp.noot.company': 'NOOT | نوت',
-        'exp.noot.period': 'نوفمبر 2024 - حتى الآن',
+        'exp.noot.period': 'نوفمبر 2024 - يناير 2026',
         'exp.noot.location': 'عن بُعد • المملكة العربية السعودية',
-        'exp.noot.p1': 'أعمل كمهندس برمجيات في <strong>نوت</strong>، منصة SaaS رائدة توفر حلول إدارة أعمال شاملة بما في ذلك إدارة الموارد البشرية والمحاسبة المالية وأنظمة نقاط البيع وإدارة علاقات العملاء وإدارة المخزون للشركات في جميع أنحاء المملكة العربية السعودية والمنطقة.',
-        'exp.noot.p2': 'تطوير وصيانة الميزات الأساسية للمنصة باستخدام <strong>Laravel</strong> و <strong>Laravel Filament</strong>، وبناء لوحات إدارة بديهية ولوحات معلومات إدارية تخدم آلاف الشركات التي تدير عملياتها اليومية بكفاءة.',
-        'exp.noot.p3': 'تنفيذ <strong>واجهات برمجة التطبيقات RESTful</strong> وخدمات الواجهة الخلفية لوحدات متكاملة متعددة بما في ذلك أنظمة الموارد البشرية والمحاسبة المالية وتتبع المخزون ووظائف إدارة علاقات العملاء، مما يضمن تدفق البيانات بسلاسة وتكامل النظام عبر المنصة.',
-        'exp.noot.p4': 'المساهمة في قرارات بنية النظام، وتحسين استعلامات قاعدة البيانات للأداء على نطاق واسع، وتنفيذ أفضل ممارسات الأمان لحماية بيانات الأعمال والبيانات المالية الحساسة.',
-        'exp.noot.p5': 'التعاون مع مديري المنتجات والفرق متعددة الوظائف في بيئة رشيقة لتقديم ميزات جديدة وتحسين تجربة المستخدم والحفاظ على معايير جودة الكود العالية من خلال مراجعات الكود والاختبار الآلي.',
-
-        // Freelance Experience
-        'exp.freelance.title': 'مهندس برمجيات',
-        'exp.freelance.company': 'عمل حر',
-        'exp.freelance.period': 'أغسطس 2019 - حتى الآن',
-        'exp.freelance.p1': 'تقديم حلول ويب مخصصة للعملاء في مختلف الصناعات، مع التركيز على تطوير تطبيقات فعالة وسهلة الاستخدام وقابلة للتطوير.',
-        'exp.freelance.p2': 'العمل على مشاريع متنوعة، بما في ذلك منصات التجارة الإلكترونية وأنظمة الإدارة وأدوات التقارير الديناميكية، باستخدام تقنيات مثل <strong>Laravel و Vue.js و Bootstrap و Tailwind CSS و JavaScript و jQuery و MySQL</strong>.',
-        'exp.freelance.p3': 'تقديم خدمات تطوير شاملة، بما في ذلك تحليل المتطلبات والتصميم والتطوير والاختبار والنشر.',
-        'exp.freelance.p4': 'التخصص في تحسين الأنظمة الحالية وتحسين الأداء وإصلاح الأخطاء ودمج واجهات برمجة التطبيقات الخارجية لتلبية احتياجات الأعمال الفريدة.',
-        'exp.freelance.p5': 'بناء علاقات قوية مع العملاء من خلال التواصل الفعال والتسليم في الوقت المحدد وتقديم نتائج عالية الجودة.',
+        'exp.noot.p1': 'تطوير وصيانة الميزات الأساسية لمنصة <strong>SaaS ERP متعددة المستأجرين</strong> تخدم الشركات في جميع أنحاء المملكة العربية السعودية.',
+        'exp.noot.p2': 'بناء أنظمة خلفية قابلة للتوسع وسير عمل الأعمال ولوحات إدارة باستخدام <strong>Laravel</strong> و <strong>Laravel Filament</strong>. تصميم وصيانة واجهات RESTful API آمنة لوحدات الموارد البشرية والمحاسبة وCRM والمخزون ونقاط البيع.',
+        'exp.noot.p3': 'تحسين أداء التطبيق من خلال تحسين قاعدة البيانات وإدارة الطوابير والتخزين المؤقت وممارسات الهندسة النظيفة مع التعاون في بيئة Agile.',
 
         // Wings Experience
         'exp.wings.title': 'مهندس برمجيات',
         'exp.wings.company': 'شركة Wings',
         'exp.wings.period': 'ديسمبر 2023 - أغسطس 2024',
-        'exp.wings.p1': 'تحسين وصيانة <strong>نظام إدارة مدرسية (SMS)</strong> قائم تم بناؤه باستخدام Laravel و Vue.js، وتحسين جودة الكود وإصلاح مشكلات وقت التشغيل وتحسين استعلامات قاعدة البيانات وإعادة هيكلة الجداول لتحسين الأداء مع توسع مجموعة البيانات. تطوير وتحسين واجهات برمجة التطبيقات لدعم تكامل تطبيقات الهاتف المحمول.',
-        'exp.wings.p2': 'المساهمة في مشروع <strong>نظام إدارة التعلم (LMS)</strong> المبني باستخدام Laravel و Tailwind، وإضافة ميزات جديدة لتحسين الوظائف. تكامل ناجح لـ CodePay كطريقة دفع، مما يمكّن المؤسسات من إنشاء وبيع رموز فريدة يمكن للمستخدمين استبدالها لشراء الدورات.',
-        'exp.wings.p3': 'التركيز على تقديم حلول عالية الأداء وقابلة للتطوير مع ضمان قابلية صيانة الكود وكفاءة النظام.',
-
-        // KitSys Experience
-        'exp.kitsys.title': 'مهندس برمجيات',
-        'exp.kitsys.company': 'شركة KitSys',
-        'exp.kitsys.period': 'يونيو 2023 - نوفمبر 2023',
-        'exp.kitsys.p1': 'تطوير وصيانة واجهات برمجة التطبيقات لـ <strong>نظام إدارة مدرسية (SMS)</strong> باستخدام Laravel، والتعامل مع الوظائف الأساسية مثل إدارة الطلاب والمعلمين والمواد. تنفيذ بنية خدمات صغيرة حيث تتواصل الخدمات بسلاسة عبر gRPC.',
-        'exp.kitsys.p2': 'بناء <strong>لوحة معلومات مشروع التجارة الإلكترونية</strong> باستخدام Laravel Filament، مما يتيح إدارة فعالة للمنصة. تصميم ونشر واجهات برمجة التطبيقات لدعم التكامل مع تطبيق الهاتف المحمول، مما يضمن تجارب مستخدم سلسة عبر الأجهزة.',
-        'exp.kitsys.p3': 'التركيز على تقديم حلول خلفية قابلة للتطوير وقوية وقابلة للصيانة مع التعاون الوثيق مع فرق الواجهة الأمامية والهاتف المحمول لضمان نجاح نتائج المشروع.',
+        'exp.wings.p1': 'تحسين وصيانة <strong>نظام إدارة مدرسية (SMS)</strong> قائم تم بناؤه باستخدام Laravel و Vue.js، وتحسين جودة الكود وإصلاح مشكلات وقت التشغيل وتحسين استعلامات قاعدة البيانات وإعادة هيكلة الجداول لتحسين الأداء. تطوير وتحسين واجهات برمجة التطبيقات لدعم تكامل تطبيقات الهاتف المحمول.',
+        'exp.wings.p2': 'المساهمة في <strong>نظام إدارة التعلم (LMS)</strong> المبني باستخدام Laravel و Tailwind، وإضافة ميزات جديدة وتكامل <strong>CodePay</strong> كطريقة دفع، مما يمكّن المؤسسات من إنشاء وبيع رموز فريدة لشراء الدورات.',
 
         // Smart Life Experience
         'exp.smartlife.title': 'مطور ويب متكامل',
         'exp.smartlife.company': 'شركة Smart Life',
         'exp.smartlife.period': 'يوليو 2022 - مايو 2023',
         'exp.smartlife.p1': 'تحسين وصيانة نظام ERP قائم تم بناؤه باستخدام إطار عمل PHP CodeIgniter، وحل الأخطاء وتحسين الأداء وتحسين جودة الكود لتحسين قابلية الصيانة والكفاءة.',
-        'exp.smartlife.p2': 'تطوير <strong>ميزة تقارير ديناميكية ذكية</strong>، تمكين العملاء من إنشاء تقارير مخصصة مصممة خصيصاً لاحتياجاتهم المحددة، وتحسين إمكانية الوصول إلى البيانات وقدرات اتخاذ القرار.',
-        'exp.smartlife.p3': 'تصميم وتنفيذ <strong>نظام توثيق</strong> باستخدام Laravel، ومركزية وتنظيم مستندات نظام الشركة لتبسيط الوصول والإدارة.',
-        'exp.smartlife.p4': 'التعاون مع أصحاب المصلحة لتحديد فرص التحسين وتنفيذ ميزات جديدة والتأكد من أن نظام ERP يلبي متطلبات الأعمال المتطورة.',
-        'exp.smartlife.p5': 'التركيز على تقديم حلول عالية الجودة تعزز قابلية استخدام النظام ورضا العملاء.',
+        'exp.smartlife.p2': 'تطوير <strong>ميزة تقارير ديناميكية ذكية</strong> تمكّن العملاء من إنشاء تقارير مخصصة. تصميم وتنفيذ <strong>نظام توثيق</strong> باستخدام Laravel لمركزية وتنظيم مستندات النظام.',
+        'exp.smartlife.p3': 'بناء <strong>لوحة معلومات مشروع التجارة الإلكترونية</strong> باستخدام Laravel Filament. تصميم ونشر واجهات برمجة التطبيقات لدعم التكامل مع تطبيق الهاتف المحمول.',
 
         // Ysys Experience
         'exp.ysys.title': 'مطور ويب متكامل',
         'exp.ysys.company': 'شركة Ysys',
         'exp.ysys.period': 'يونيو 2021 - مايو 2022',
-        'exp.ysys.p1': 'تصميم وتطوير تطبيقات ويب قابلة للتطوير، مع التركيز على كل من منطق جانب الخادم ومكونات جانب العميل.',
-        'exp.ysys.p2': 'المساهمة بشكل كبير في Floosak، <strong>محفظة مالية</strong> مبنية باستخدام Laravel، والتعامل مع جوانب مختلفة بما في ذلك إنشاء التقارير وحل المشكلات وتنفيذ الميزات والتكامل مع مزودي الطرف الثالث لتحسين الوظائف.',
-        'exp.ysys.p3': 'دمج <strong>واجهات برمجة التطبيقات الخارجية</strong> والخدمات لتوسيع قدرات التطبيق وضمان التشغيل البيني السلس.',
-        'exp.ysys.p4': 'إدارة وصيانة بيئات الخادم المختلفة، بما في ذلك حلول الاستضافة وأنظمة إدارة قواعد البيانات والبنية التحتية السحابية (مثل <strong>Forge</strong> و Namecheap)، مما يضمن الأداء الأمثل والموثوقية.',
-        'exp.ysys.p5': 'التعاون مع أعضاء الفريق لدعم جهود التطوير، وضمان التكامل السلس للكود ونجاح المشروع بشكل عام.',
+        'exp.ysys.p1': 'تصميم وتطوير تطبيقات ويب قابلة للتوسع، مع التركيز على كل من منطق جانب الخادم ومكونات جانب العميل.',
+        'exp.ysys.p2': 'المساهمة بشكل كبير في Floosak، <strong>محفظة مالية</strong> مبنية باستخدام Laravel، في إنشاء التقارير وحل المشكلات وتنفيذ الميزات والتكامل مع مزودي الطرف الثالث.',
+        'exp.ysys.p3': 'دمج <strong>واجهات برمجة التطبيقات الخارجية</strong> والخدمات لتوسيع قدرات التطبيق. إدارة بيئات الخادم بما في ذلك الاستضافة وقواعد البيانات والبنية التحتية السحابية (<strong>Forge</strong> و Namecheap).',
 
         // Education Section
         'education.subtitle': 'الخلفية الأكاديمية',

@@ -1808,6 +1808,14 @@ a {
     padding: 10px;
 }
 
+.timeline-logo--dark {
+    background: #000;
+}
+
+.timeline-logo--dark img {
+    padding: 6px;
+}
+
 .timeline-item:hover .timeline-logo {
     transform: scale(1.1) rotate(3deg);
 }
